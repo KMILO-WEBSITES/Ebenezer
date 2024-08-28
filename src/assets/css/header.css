@@ -1,0 +1,143 @@
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+.logo{
+    margin-left: 150px;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color:rgba(0, 0, 0, 0.801); */
+    background-color:rgba(0, 0, 0, 0.897);
+    border: none;
+    width: 100%;
+    /* position: fixed;  */
+    top: 0; 
+    z-index: 100;
+    height: 100px;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  margin-right: 250px;
+}
+
+.menu li:hover {
+  background-color: rgba(175, 173, 173, 0.308);
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.dropdown-sub {
+  position: relative; 
+}
+
+.dropdown {
+  background-color: rgba(0, 0, 0, 0.801);
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 37px;
+  width: 220px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: auto;
+  text-align: left;
+}
+
+.dropdown li:hover {
+  background-color: rgba(175, 173, 173, 0.308);
+}
+
+.dropdown-sub:hover .dropdown {
+  display: block;
+}
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+  display: none;
+} 
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+ .menu {
+    display:none;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.801);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color:rgba(0, 0, 0, 0.801);
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: rgba(0, 0, 0, 0.801);
+  }
+}

@@ -1,0 +1,131 @@
+.content-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centrar horizontalmente */
+    height: auto; /* Altura total del viewport */
+    margin: 50px 0 50px 0;  
+}
+.container-video {
+    display: flex;   
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 75%; /* Ocupar 90% del ancho */
+    margin: 100px 0 100px 0;
+    view-timeline-name: --content;
+    view-timeline-axis: block;
+  
+    animation-timeline: --content;
+    animation-name: show;
+  
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+  }  
+  .video{
+    display: flex;   
+    width: 70%;
+    height: 500px;
+ 
+  }
+  .video-text {
+    display: flex;   
+    flex-direction: column;
+    width: 500px;
+    margin-left: 20px;
+  }
+  .video-description{
+    display: flex;
+    justify-content: start;
+    font-size: 20px;
+    flex-direction: row;
+   }
+  .url-canal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: #3368DF;
+    color: #fff;
+    border-radius: 25px;
+    padding: 5px 5px;
+    cursor: pointer;
+  }
+  .url-canal:hover{
+    background-color: #7599ee;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    color: aliceblue;
+    font-style: oblique;
+    font-size: 30px;
+}
+.mision-vision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../assets/images/main4.jpeg'); 
+    background-size: cover;
+    background-position: center center;
+    width: 100%; 
+    height: 600px;
+    margin: 50px 0 100px 0;
+    view-timeline-name: --content;
+    view-timeline-axis: block;
+  
+    animation-timeline: --content;
+    animation-name: show;
+  
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+.mision-vision-text{
+    font-size: 50px;
+    color: #01050e;
+    margin: 50px;
+    font-family: "Montserrat";
+}
+.mision-vision-text-mv h2{
+  font-size: 24px;
+  color: #01050e;
+} 
+.mision-vision-text-mv p{
+    font-size: 20px;
+    color: #000;
+}
+.content-map{
+  display: flex;
+  width: 100%;
+  height: auto;
+  view-timeline-name: --content;
+  view-timeline-axis: block;
+
+  animation-timeline: --content;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+.map{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: 10px;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
