@@ -1,8 +1,8 @@
 // import React from 'react'
 import '../../assets/css/styles.css';
-import '../../assets/css/peoples.css';
-import pastores from "../../assets/images/main3.jpeg";
-export const Peoples = () => {
+import '../../assets/css/us/shepherds.css';
+import shepherds from "../../assets/images/main3.jpeg";
+export const Shepherds = () => {
   return (
     <>
     <div className="section-page-name">
@@ -11,11 +11,11 @@ export const Peoples = () => {
         </div>
     </div>
     <div className='content'>
-    <div className="container-peoples">
-        <img src={pastores} alt='Pastores' className='peoples-img'/>
+    <div className="container-shepherds">
+        <img src={shepherds} alt='Pastores' className='shepherds-img'/>
 
-        <div className='peoples-text'>         
-          <div className='peoples-description'>
+        <div className='shepherds-text'>         
+          <div className='shepherds-description'>
             <p>Este vídeo ofrece una visión única de nuestra comunidad de fe, destacando nuestros valores, eventos y enseñanzas clave. Únete a nosotros en este viaje espiritual.</p>
           </div>
           

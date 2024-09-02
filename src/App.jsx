@@ -6,21 +6,26 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { Header } from './components/common/Header';
-import { Footer } from './components/common/Footer';
-import {Home} from './pages/home/Home';
-import { Peoples } from './pages/about/Peoples';
-import { History } from './pages/about/History';
-import { Believe } from './pages/about/Believe';
-import { SmallGroups } from './pages/ministeries/SmallGroups';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
+
+import { Home } from './pages/Home';
+import { Sermons } from './pages/Sermons';
+import { Events } from './pages/Events';
+
+import { Shepherds } from './pages/us/Shepherds';
+import { History } from './pages/us/History';
+import { Believe } from './pages/us/Believe';
+
+import { Groups } from './pages/ministeries/Groups';
 import { Women } from './pages/ministeries/Women';
 import { Men } from './pages/ministeries/Men';
 import { RoyalRangersKids } from './pages/ministeries/RoyalRangersKids';
-import { Atalayas } from './pages/ministeries/Atalayas';
-import { Misions } from './pages/ministeries/Misions';
-import { Sermons } from './pages/streaming/Sermons';
-import { Events } from './pages/events/Events';
-
+import { Worship } from './pages/ministeries/Worship';
+import { Youths } from './pages/ministeries/Youths';
+import { Dance } from './pages/ministeries/Dance';
+import { Intercession } from './pages/ministeries/Intercession';
+import { Kids } from './pages/ministeries/Kids';
 
 function App() {
   return (
@@ -28,17 +33,20 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/peoples' element={<Peoples />} />
+        <Route path='/sermons' element={<Sermons />} />
+        <Route path='/events' element={<Events />} />
+        <Route path='/shepherds' element={<Shepherds />} />
         <Route path='/history' element={<History />} />
         <Route path='/believe' element={<Believe />} />
-        <Route path='/groups' element={<SmallGroups />} />
+        <Route path='/groups' element={<Groups />} />
         <Route path='/women' element={<Women />} />
         <Route path='/men' element={<Men />} />
-        <Route path='/rangers' element={<RoyalRangersKids />} />
-        <Route path='/sermons' element={<Sermons />} />
-        <Route path='/atalayas' element={<Atalayas />} />
-        <Route path='/events' element={<Events />} />
-        <Route path='/misions' element={<Misions />} />
+        <Route path='/rangers' element={<RoyalRangersKids />} />        
+        <Route path='/worship' element={<Worship />} />        
+        <Route path='/youths' element={<Youths />} />
+        <Route path='/dance' element={<Dance />} />
+        <Route path='/intercession' element={<Intercession />} />
+        <Route path='/kids' element={<Kids />} />
       </Routes>
       <Footer />
     </>

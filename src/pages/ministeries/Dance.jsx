@@ -1,11 +1,11 @@
 // import React from 'react'
 import '../../assets/css/styles.css';
-export const RoyalRangersKids = () => {
+export const Dance = () => {
   return (
     <>
     <div className="section-page-name">
     <div className="content-text">
-          <strong>Royal Rangers</strong>
+          <strong>Danza</strong>
         </div>
     </div>
     <div className='content'>
