@@ -13,7 +13,7 @@
     margin: 50px;
     font-family: "Montserrat";
 }
-.container-peoples {
+.container-shepherds {
     display: flex;   
     flex-direction: row;
     justify-content: space-evenly;
@@ -21,7 +21,7 @@
     width: 75%; /* Ocupar 90% del ancho */
     margin: 100px 0 100px 0;
   }
-  .peoples-text {
+  .shepherds-text {
     display: flex;   
     flex-direction: column;
     width: 500px;
@@ -54,13 +54,13 @@
       opacity: 1;
     }
   }
-  .peoples-description{
+  .shepherds-description{
     display: flex;
     justify-content: start;
     font-size: 20px;
     flex-direction: row;
    }
-   .peoples-img{
+   .shepherds-img{
     width: 600px;
     height: 400px;
     border-radius: 10px;

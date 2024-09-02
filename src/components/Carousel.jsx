@@ -3,10 +3,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import img1 from "../../assets/images/main0.jpeg";
-import img2 from "../../assets/images/main1.jpeg";
-import img3 from "../../assets/images/main2.jpeg";
-import "../../assets/css/carousels.css";
+import img1 from "../assets/images/main0.jpeg";
+import img2 from "../assets/images/main1.jpeg";
+import img3 from "../assets/images/main2.jpeg";
+import "../assets/css/components/carousels.css";
 
 export const Carousel = () => {
   return (

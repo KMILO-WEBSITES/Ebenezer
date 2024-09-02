@@ -1,5 +1,5 @@
 //  import React from 'react'
-import "../../assets/css/middleSection.css";
+import "../assets/css/components/middleSection.css";
 
 export const MiddleSection = () => {
   return (
@@ -20,12 +20,13 @@ export const MiddleSection = () => {
         <div className="mision-vision-text">
           <strong>Ama a Dios, Ama a la gente.</strong>
         </div>
-        <div  className="mision-vision-text-mv">
+        <div className="mision-vision-text-mv">
           <h2>Misión</h2>
           <p>Nuestra Iglesia existe para alcanzar a las almas mostrando el amor de Cristo, y guiarlas a una relación íntima con Dios.</p>
 
           <h2>Visión</h2>
-          <p>Discipular, Enviar, Establecer, y Renovar.</p>
+          <p>Existimos por la necesidad que experimentamos todos de pertenecer a una familia. En nuestra iglesia encontrarás a hermanos que te aceptarán y te amarán tal y como eres. Te orientarán y guiarán a tener una relación íntima con Dios.
+            Te ayudarán a establecer y fortalecer en el Señor. Creciendo juntos en el gozo del Señor y en Su conocimiento; amándole a El y amando a la gente</p>
         </div>
       </div>
 
