@@ -22,7 +22,7 @@ import { Women } from './pages/ministeries/Women';
 import { Men } from './pages/ministeries/Men';
 import { RoyalRangersKids } from './pages/ministeries/RoyalRangersKids';
 import { Worship } from './pages/ministeries/Worship';
-import { Youths } from './pages/ministeries/Youths';
+import { Young } from './pages/ministeries/Young';
 import { Dance } from './pages/ministeries/Dance';
 import { Intercession } from './pages/ministeries/Intercession';
 import { Kids } from './pages/ministeries/Kids';
@@ -43,7 +43,7 @@ function App() {
         <Route path='/men' element={<Men />} />
         <Route path='/rangers' element={<RoyalRangersKids />} />        
         <Route path='/worship' element={<Worship />} />        
-        <Route path='/youths' element={<Youths />} />
+        <Route path='/young' element={<Young />} />
         <Route path='/dance' element={<Dance />} />
         <Route path='/intercession' element={<Intercession />} />
         <Route path='/kids' element={<Kids />} />
