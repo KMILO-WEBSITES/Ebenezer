@@ -36,14 +36,14 @@ export const Header = () => {
                     <li className="dropdown-sub">
                         <a href="/">Ministerios</a>
                         <ul className="dropdown">
+                        <li><Link to="/kids">Niños</Link></li>
                             <li><Link to="/groups">Grupos Pequeños</Link></li>
+                            <li><Link to="/young">Jóvenes</Link></li>
                             <li><Link to="/women">Mujeres</Link></li>
                             <li><Link to="/men">Hombres</Link></li>
                             <li><Link to="/rangers">Niños/Royal Rangers</Link></li>
-                            <li><Link to="/worship">Adoración</Link></li>
-                            <li><Link to="/youths">Jóvenes</Link></li>
-                            <li><Link to="/dance">Danza</Link></li>
-                            <li><Link to="/kids">Niños</Link></li>
+                            <li><Link to="/worship">Adoración</Link></li>                           
+                            <li><Link to="/dance">Danza</Link></li>                            
                             <li><Link to="/intercession">Intercesión</Link></li>
                         </ul>
                     </li>
