@@ -5,51 +5,71 @@
   align-items: center;
   height: auto;
 }
-.container-video {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: start;
-  width: 100%;
-  margin: 100px 0 100px 0;
-  view-timeline-name: --content;
-  view-timeline-axis: block;
-  animation-timeline: --content;
-  animation-name: show;
-  animation-range: entry 25% cover 30%;
-  animation-fill-mode: both;
-  padding: 0px 150px 0px 150px;
-}
 .video {
   display: flex;
+  width: 800px;
+  height: 500px;
+}
+.container-video {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin: 50px 0 500px 0;
+}
+.fondo-video {
+  width: 1400px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  z-index: 1; /* Está detrás */
+  background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,244,235,1) 71%);
+}
+.youtube-text {
+  background-color: #fff;
   width: 600px;
-  height: 400px;
+  height: 250px;
+  position: absolute;
+  top: 310px;
+  left: 1300px;
+  z-index: 2; /* Está adelante */
+}
+.youtube {
+  width: 700px;
+  height: 100px;
+  position: absolute;
+  top: 150px;
+  left: 1190px;
+  z-index: 2; /* Está adelante */ 
+  font-size: 50px;
+}
+.tube{
+  color: #fff;
+  background-color: #FE0000;
+  padding: 3px;
+  border-radius: 15px;
 }
 .video-text {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  margin-left: 20px;
-}
-.video-description {
-  display: flex;
-  justify-content: start;
-  font-size: 20px;
-  flex-direction: row;
+  padding: 40px 20px 0 20px;
+  width: auto;
+  height: auto;
 }
 .url-canal {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  background-color: #2D2427;
+  width: 200px;
+  background-color: #FE0000;
   color: #fff;
-  border-radius: 25px;
+  border-radius: 8px;
+  border: none;
   padding: 5px 5px;
   cursor: pointer;
 }
 .url-canal:hover {
-  background-color: #7599ee;
+  background-color: #000;
+  color: #fff;
   transition: 0.3s ease;
   cursor: pointer;
 }
@@ -62,81 +82,97 @@
   font-style: oblique;
   font-size: 30px;
 }
-.mision-vision {
+.container-mision-vision {
+  margin: 300px 0 300px 0;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center; 
+  justify-content: space-around; 
   width: 100%;
-  height: 350px;
-  margin: 0;
-  padding: 0 150px 0 150px;
-  view-timeline-name: --content;
-  view-timeline-axis: block;
-  animation-timeline: --content;
-  animation-name: show;
-  animation-range: entry 25% cover 30%;
-  animation-fill-mode: both;
+  height: 600px;
+  background-color: #ECF0F1;
+}
+.mision-vision {
+  width: 60%;
+  min-height: 500px;
+  padding: 0 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center; /* Centra el texto dentro de la caja */
 }
 .mision-vision-text {
   display: flex;
   justify-content: center;
   align-items: center; 
   width: 100%;
-  font-size: 50px;
+  font-size: 40px;
+  color: #b7950b;
+  font-family: "Montserrat";
+  padding: 50px 0 50px 0;
+}
+.mision-vision p {
+  font-size: 20px;
   color: #000;
   font-family: "Montserrat";
 }
-.mision-vision-text-mv p {
-  font-size: 20px;
-  color: #000;
-  padding: 0 100px 0 100px;
+.mision-vision h3 {
+  text-align: left;
+  color: #b7950b;
 }
-.container-next-event {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: start;
-  width: 100%; 
-  view-timeline-name: --content;
-  view-timeline-axis: block;
-  animation-timeline: --content;
-  animation-name: show;
-  animation-range: entry 25% cover 30%;
-  animation-fill-mode: both;
-  margin: 0 0 100px 0;
-  padding: 0 150px 0 150px;
+.mision-vision-img {
+  width: auto;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
 }
-.next-event-description {
+.join-us {
   display: flex;
-  justify-content: start;
   flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  font-family: "Montserrat";
+  width: 100%;
+  height: 300px;
+  background-color: #0C1223;
 }
-.container-next-event-img {
-  padding: 20px;
+.join-us h1 {
+  font-size: 40px;
+  color: #b7950b;
+  margin-top: 50px;
 }
-.next-event-img {
-  width: 600px;
-  height: 400px;
+.join-us p {
+  font-size: 20px;
+  color: #fff;
 }
-
+.location-us {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-size: 40px;
+  color: #b7950b;
+  font-family: "Montserrat";
+  background-color: #fff;
+}
 .content-map {
   display: flex;
   width: 100%;
   height: auto;
-  view-timeline-name: --content;
+  /* view-timeline-name: --content;
   view-timeline-axis: block;
-  animation-timeline: --content;
-  animation-name: show;
-  animation-range: entry 25% cover 30%;
-  animation-fill-mode: both;
+  animation-timeline: --content; */
+  /* animation-name: show; */
+  /* animation-range: entry 25% cover 30%; */
+  /* animation-fill-mode: both; */
 }
 .map {
   display: flex;
   width: 100%;
   height: 350px;
-  margin: 10px;
 }
-
+/* 
 @keyframes show {
   from {
     opacity: 0;
@@ -147,4 +183,4 @@
     opacity: 1;
     scale: 100%;
   }
-}
+} */

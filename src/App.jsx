@@ -10,7 +10,6 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 
 import { Home } from './pages/Home';
-import { Sermons } from './pages/Sermons';
 import { Events } from './pages/Events';
 
 import { Shepherds } from './pages/us/Shepherds';
@@ -33,7 +32,6 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/sermons' element={<Sermons />} />
         <Route path='/events' element={<Events />} />
         <Route path='/shepherds' element={<Shepherds />} />
         <Route path='/history' element={<History />} />

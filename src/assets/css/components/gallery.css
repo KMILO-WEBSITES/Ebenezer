@@ -1,0 +1,27 @@
+/* Gallery.css */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    margin: 100px 0 0 0;
+    padding: 50px 100px 50px 100px ;
+    background-color: #FEFAE0;
+  }
+  
+  .gallery-item {
+    flex: 1 1 400px; /* Ancho base mínimo de 200px, se adapta al tamaño del contenedor */
+    max-width: 450px; /* Ancho máximo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* Bordes redondeados opcionales */
+  }
+  

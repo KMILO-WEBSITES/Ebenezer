@@ -1,17 +1,20 @@
 // import React from 'react'
 import "../../assets/css/styles.css";
-import "../../assets/css/components/ministeries.css";
+import nextEvent from "../../assets/images/small-groups.jpg";
 export const Worship = () => {
   return (
     <>
-      <div className="section-page-header section-page-header-img header-page-worship-img">
+      <div className="section-page-header header-page-title">
         <div className="section-page-header-name">
-          <strong>Adoración</strong>
-        </div>
+          ADORACIÓN 
+          </div>
       </div>
       <div className="content">
-        <div className="font-text">
-          <p>
+      <div className="container-center center-fade-in-bottom">
+          <img src={nextEvent} alt="" className="center-img"/>
+          <div className="center-text">
+            <div className="center-description">
+          <p><b>
             Nuestro próposito es guiar a la congregación en la adoración a Dios,
             facilitando un ambiente donde las personas puedan experimentar y
             expresar su amor, gratitud y reverencia hacia Él utilizando música,
@@ -20,7 +23,9 @@ export const Worship = () => {
             glorificar a Dios y edificar a la iglesia al dirigir la adoración,
             creando un entorno donde los creyentes puedan conectarse con Dios de
             manera profunda, auténtica, y transformadora.
-          </p>
+            </b></p>
+            </div>
+          </div>
         </div>
       </div>
     </>

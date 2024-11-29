@@ -1,19 +1,21 @@
 // import React from 'react'
 import "../../assets/css/styles.css";
-import "../../assets/css/components/ministeries.css";
-import nextEvent from "../../assets/images/small-church-kids.jpg";
+import kidsImag from "../../assets/images/small-church-kids.jpg";
+import Gallery from "../../components/Gallery";
 export const Kids = () => {
   return (
     <>
-      <div className="section-page-header section-page-header-img header-page-kids-img">
+      <div className="section-page-header header-page-title">
         <div className="section-page-header-name">
-          <strong>Niños</strong>
+          NIÑOS
         </div>
       </div>
       <div className="content">
-        <div className="container-kids">
-          <img src={nextEvent} alt="" className="kids-img" />
-          <p>
+        <div className="container-center center-fade-in-bottom">
+          <img src={kidsImag} alt="" className="center-img"/>
+          <div className="center-text">
+            <div className="center-description">
+          <p><b>
             Nuestro propósito es proporcionar una base sólida en la fe desde una
             edad temprana, enseñando a los niños acerca de Dios, la Biblia, y
             los principios cristianos en un entorno seguro, amoroso y adecuado
@@ -23,8 +25,11 @@ export const Kids = () => {
             los niños en sus primeros pasos de fe, ayudándolos a conocer y amar
             a Dios, aprender la Biblia, y vivir de acuerdo con los principios
             cristianos, todo dentro de un entorno seguro y lleno de amor.
-          </p>
+            </b></p>
+            </div>
+          </div>
         </div>
+        <Gallery/>
       </div>
     </>
   );

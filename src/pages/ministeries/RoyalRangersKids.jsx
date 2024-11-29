@@ -1,23 +1,30 @@
 // import React from 'react'
 import "../../assets/css/styles.css";
-import "../../assets/css/components/ministeries.css";
+import nextEvent from "../../assets/images/small-groups.jpg";
+import Gallery from "../../components/Gallery";
 export const RoyalRangersKids = () => {
   return (
     <>
-      <div className="section-page-header section-page-header-img header-page-rangers-img">
+      <div className="section-page-header header-page-title">
         <div className="section-page-header-name">
-          <strong>Royal Rangers</strong>
+          ROYAL RANGERS
         </div>
       </div>
       <div className="content">
-        <div className="font-text">
-          <p>
+      <div className="container-center center-fade-in-bottom">
+          <img src={nextEvent} alt="" className="center-img"/>
+          <div className="center-text">
+            <div className="center-description">
+          <p><b>
             The royal rangers is a ministry for boys and young men in grades
             K-12 and our mission is to evangelize, equip and empower the next
             generation so they may become Christlike men and lifelong servant
             leaders.
-          </p>
+            </b></p>
+            </div>
+          </div>
         </div>
+        <Gallery/>
       </div>
     </>
   );

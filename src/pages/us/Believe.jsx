@@ -1,10 +1,9 @@
 // import React from 'react'
 import "../../assets/css/styles.css";
-import "../../assets/css/us/believe.css";
 export const Believe = () => {
   return (
     <>
-      <div className="section-page-header section-page-header-img header-page-believe-img">
+      <div className="section-page-header header-page-title">
         <div className="section-page-header-name">
           QUE CREEMOS
         </div>

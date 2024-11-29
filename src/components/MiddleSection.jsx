@@ -1,69 +1,72 @@
 //  import React from 'react'
 import "../assets/css/components/middleSection.css";
-import nextEvent from "../assets/images/main0.jpeg";
+import { CarouselEvent } from "../components/CarouselEvent";
+import imgMisionVision from "../assets/images/main7.png";
 export const MiddleSection = () => {
   return (
-    <div className="content-all">
-      <div className="container-video">
-        <iframe
-          className="video"
-          src="https://www.youtube.com/embed/nrYtG5in000"
-          title="Yo No Temeré by E.B.O. Worship Team"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        ></iframe>
+    <div className="content-all">     
+      <div className="container-mision-vision">      
+        <div className="mision-vision">
+          <div className="mision-vision-text">Ama a Dios, Ama a la gente.</div>
+          <h3>Misión</h3>
+          <p>
+            Nuestra Iglesia existe para alcanzar a las almas mostrando el amor
+            de Cristo, y guiarlas a una relación íntima con Dios.
+          </p>
 
-        <div className="video-text">
-          <div className="video-description">
+          <h3>Visión</h3>
+          <p>
+            Existimos por la necesidad que experimentamos todos de pertenecer a
+            una familia. En nuestra iglesia encontrarás a hermanos que te
+            aceptarán y te amarán tal y como eres. Te orientarán y guiarán a
+            tener una relación íntima con Dios. Te ayudarán a establecer y
+            fortalecer en el Señor. Creciendo juntos en el gozo del Señor y en
+            Su conocimiento; amándole a El y amando a la gente.
+          </p>
+        </div>
+        <div><img src={imgMisionVision} className="mision-vision-img" /></div>
+      </div>
+      <div className="join-us">
+        <h1>Únete a Nosotros</h1>
+        <p> Te invitamos a ser parte de esta familia de fe, donde
+        juntos crecemos, servimos y adoramos.</p>
+        <p> <b>¡Únete a nosotros y sé testigo del
+        impacto que podemos lograr en unidad!</b></p>
+      </div>
+      <CarouselEvent />
+      <div className="container-video">
+        <div className="fondo-video">
+          <iframe
+            className="video"
+            src="https://www.youtube.com/embed/nrYtG5in000"
+            title="Yo No Temeré by E.B.O. Worship Team"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+        <div className="youtube">
+          Ya estamos en You<b className="tube">Tube</b>
+        </div>
+        <div className="youtube-text">
+          <div className="video-text">
             <p>
               Este vídeo ofrece una visión única de nuestra comunidad de fe,
               destacando nuestros valores, eventos y enseñanzas clave. Únete a
               nosotros en este viaje espiritual.
             </p>
+            <br />
+            <a
+              className="url-canal"
+              href="https://www.youtube.com/@iglesiaebenezerorlando"
+              target="_blank"
+            >
+              Suscribete al canal
+            </a>
           </div>
-          <a
-            className="url-canal"
-            href="https://www.youtube.com/@iglesiaebenezerorlando"
-            target="_blank"
-          >
-            Ir al canal
-          </a>
         </div>
       </div>
-      <div className="mision-vision-text">Ama a Dios, Ama a la gente.</div>
-      <div className="mision-vision">
-        <h2>Misión</h2>
-        <p>
-          Nuestra Iglesia existe para alcanzar a las almas mostrando el amor de
-          Cristo, y guiarlas a una relación íntima con Dios.
-        </p>
-
-        <h2>Visión</h2>
-        <p>
-          Existimos por la necesidad que experimentamos todos de pertenecer a
-          una familia. En nuestra iglesia encontrarás a hermanos que te
-          aceptarán y te amarán tal y como eres. Te orientarán y guiarán a tener
-          una relación íntima con Dios. Te ayudarán a establecer y fortalecer en
-          el Señor. Creciendo juntos en el gozo del Señor y en Su conocimiento;
-          amándole a El y amando a la gente
-        </p>
-      </div>
-      <div className="container-next-event">
-        <div className="next-event-description">
-          <h2>Próximo evento</h2>
-          <p>
-            <b>Celebración por el nacimiento del niño Jesús</b>
-            <br /><br />
-            Únete a nosotros para una noche especial de reflexión, oración y
-            adoración.
-            Esta vigilia será una oportunidad para congregarnos como comunidad,
-            para renovar nuestrocompromiso con la fe. El servicio incluirá himnos, lecturas
-            bíblicas, y un sermón inspirador por nuestro pastor.
-          </p>
-        </div>
-
-        <div className="container-next-event-img">
-          <img src={nextEvent} alt="" className="next-event-img" />
-        </div>
+      
+      <div className="location-us">
+        Encuéntranos Aquí
       </div>
       <div className="map">
         <iframe
