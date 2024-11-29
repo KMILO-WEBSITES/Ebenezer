@@ -1,25 +1,32 @@
 // import React from 'react'
 import "../../assets/css/styles.css";
-import "../../assets/css/components/ministeries.css";
+import nextEvent from "../../assets/images/small-groups.jpg";
+import Gallery from "../../components/Gallery";
 export const Men = () => {
   return (
     <>
-      <div className="section-page-header section-page-header-img header-page-men-img">
-        <div className="content-text">
-          <strong>Hombres</strong>
+     <div className="section-page-header header-page-title">
+     <div className="section-page-header-name">
+          HOMBRES
         </div>
       </div>
       <div className="content">
-        <div className="font-text">
-          <p>
+      <div className="container-center center-fade-in-bottom">
+          <img src={nextEvent} alt="" className="center-img"/>
+          <div className="center-text">
+            <div className="center-description">
+          <p><b>
             Buscamos equipar a los hombres para que vivan su fe de manera
             íntegra, sean líderes espirituales en sus hogares y comunidades, y
             se conviertan en modelos de carácter y servicio cristiano. Nos
             enfocamos en abordar las necesidades espirituales, emocionales y
             prácticas de los hombres en el contexto de su vida personal,
             familiar, profesional y comunitaria.
-          </p>
+            </b></p>
+            </div>
+          </div>
         </div>
+        <Gallery/>
       </div>
     </>
   );

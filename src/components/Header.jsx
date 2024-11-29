@@ -48,7 +48,7 @@ export const Header = () => {
                         </ul>
                     </li>
                     <li><Link to="/events">Eventos</Link></li>
-                    <li><Link to="/sermons">Sermones</Link></li>
+                    <li><Link to="https://www.youtube.com/@iglesiaebenezerorlando/streams">Sermones</Link></li>
                 </div>
             </ul>
         </nav>
