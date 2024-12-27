@@ -6,7 +6,7 @@ export const Intercession = () => {
     <>
       <div className="section-page-header header-page-title">
         <div className="section-page-header-name">
-          INTERCEPCIÓN
+          INTERCESIÓN
         </div>
       </div>
       <div className="content">

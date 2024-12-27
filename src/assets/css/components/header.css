@@ -22,11 +22,9 @@ li {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* background-color:rgba(0, 0, 0, 0.801); */
-    background-color:rgba(0, 0, 0, 0.897);
+    background-color:#021323;
     border: none;
     width: 100%;
-    /* position: fixed;  */
     top: 0; 
     z-index: 100;
     height: 100px;
@@ -45,8 +43,8 @@ li {
 }
 
 .menu li:hover {
-  background-color: rgba(175, 173, 173, 0.308);
-  border-radius: 5px;
+  background-color: #2793EB;
+  border-radius: 20px;
   transition: 0.3s ease;
 }
 
@@ -60,11 +58,11 @@ li {
 }
 
 .dropdown {
-  background-color: rgba(0, 0, 0, 0.801);
-  padding: 1em 0;
+  background-color: #021323;
+  padding: 1em 0.2em;
   position: absolute; /*WITH RESPECT TO PARENT*/
   display: none;
-  border-radius: 8px;
+  border-radius: 15px;
   top: 37px;
   width: 220px;
 }
@@ -74,13 +72,13 @@ li {
 }
 
 .dropdown li {
-  padding: 0.5em 1em;
+  padding: 0.3em 1em;
   width: auto;
   text-align: left;
 }
 
 .dropdown li:hover {
-  background-color: rgba(175, 173, 173, 0.308);
+  background-color: #2793EB;
 }
 
 .dropdown-sub:hover .dropdown {
@@ -106,7 +104,7 @@ input[type=checkbox] {
  .menu {
     display:none;
     position: absolute;
-    background-color:rgba(0, 0, 0, 0.801);
+    background-color:#021323;
     right: 0;
     left: 0;
     text-align: center;
@@ -115,7 +113,7 @@ input[type=checkbox] {
 
   .menu li:hover {
     display: inline-block;
-    background-color:rgba(0, 0, 0, 0.801);
+    background-color:#021323;
     transition: 0.3s ease;
   }
 
@@ -138,6 +136,6 @@ input[type=checkbox] {
   }
 
   .dropdown li:hover {
-    background-color: rgba(0, 0, 0, 0.801);
+    background-color:#021323;
   }
 }
