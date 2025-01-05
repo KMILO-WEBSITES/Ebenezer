@@ -1,6 +1,6 @@
 // import React from 'react'
-import "../../assets/css/styles.css";
-import shepherds from "../../assets/images/pastores.png";
+import "../../assets/css/pages/us/shepherds.css";
+import shepherds from "../../assets/images/pastores/1.png";
 export const Shepherds = () => {
   return (
     <>
@@ -13,7 +13,8 @@ export const Shepherds = () => {
         <div className="container-center center-fade-in-bottom">
           <img src={shepherds} alt="Pastores" className="center-img" />
           <div className="center-text">
-            <div className="center-description">
+          <div className="center-text-title">Pedro & Elena Gómez</div>
+            <div className="center-description">            
               <p><b>
                 Los pastores de nuestra iglesia son líderes espirituales
                 dedicados a guiar y cuidar de nuestra comunidad de fe. Su labor

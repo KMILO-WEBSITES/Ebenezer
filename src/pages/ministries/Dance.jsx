@@ -1,13 +1,13 @@
 // import React from 'react'
-import "../../assets/css/styles.css";
+import "../../assets/css//pages/ministries/dance.css";
 import nextEvent from "../../assets/images/small-groups.jpg";
 import Gallery from "../../components/Gallery";
-export const RoyalRangersKids = () => {
+export const Dance = () => {
   return (
     <>
       <div className="section-page-header header-page-title">
         <div className="section-page-header-name">
-          ROYAL RANGERS
+          DANZA
         </div>
       </div>
       <div className="content">
@@ -16,10 +16,12 @@ export const RoyalRangersKids = () => {
           <div className="center-text">
             <div className="center-description">
           <p><b>
-            The royal rangers is a ministry for boys and young men in grades
-            K-12 and our mission is to evangelize, equip and empower the next
-            generation so they may become Christlike men and lifelong servant
-            leaders.
+            Nuestro próposito es utilizar la danza como una forma de adoración y
+            expresión espiritual, glorificando a Dios a través del movimiento y
+            el arte. Tenemos como objetivo glorificar a Dios y enriquecer la
+            vida de la iglesia mediante la danza, ofreciendo una forma creativa
+            y poderosa de adorar, comunicar mensajes bíblicos, y conectar con la
+            congregación y la comunidad en general.
             </b></p>
             </div>
           </div>

@@ -1,5 +1,5 @@
 // import React from 'react'
-import "../../assets/css/styles.css";
+import "../../assets/css/pages/ministries/kids.css";
 import kidsImag from "../../assets/images/small-church-kids.jpg";
 import Gallery from "../../components/Gallery";
 export const Kids = () => {

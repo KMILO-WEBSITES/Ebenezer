@@ -1,6 +1,6 @@
 // import React from 'react'
-import '../../assets/css/styles.css';
-import nextEvent from "../../assets/images/small-groups.jpg";
+import '../../assets/css/pages/us/history.css';
+import history from "../../assets/images/history/1.jpg";
 export const History = () => {
   return (
     <>
@@ -9,10 +9,9 @@ export const History = () => {
           HISTORIA DE LA IGLESIA
         </div>
     </div>
-    <div className='content'>
-    <div className="container-center center-fade-in-bottom">
-          <img src={nextEvent} alt="" className="center-img"/>
-          <div className="center-text">
+    <div className="center-fade-in-bottom">
+          <img src={history} alt="" className="center-img"/>
+          
             <div className="center-description">
           <p><b>
               Nuestro próposito es guiar a los jóvenes en su desarrollo
@@ -26,9 +25,7 @@ export const History = () => {
               se conviertan en líderes comprometidos en la iglesia y en la
               sociedad.
               </b></p>
-            </div>
-          </div>
-        </div>  
+            </div>       
     </div>
     </>
   )

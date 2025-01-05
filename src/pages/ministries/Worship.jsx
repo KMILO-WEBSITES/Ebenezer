@@ -1,5 +1,5 @@
 // import React from 'react'
-import "../../assets/css/styles.css";
+import "../../assets/css/pages/ministries/worship.css";
 import nextEvent from "../../assets/images/small-groups.jpg";
 export const Worship = () => {
   return (

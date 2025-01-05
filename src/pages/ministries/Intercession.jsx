@@ -1,13 +1,12 @@
 // import React from 'react'
-import "../../assets/css/styles.css";
+import "../../assets/css/pages/ministries/intercession.css";
 import nextEvent from "../../assets/images/small-groups.jpg";
-import Gallery from "../../components/Gallery";
-export const Dance = () => {
+export const Intercession = () => {
   return (
     <>
       <div className="section-page-header header-page-title">
         <div className="section-page-header-name">
-          DANZA
+          INTERCESIÓN
         </div>
       </div>
       <div className="content">
@@ -16,17 +15,13 @@ export const Dance = () => {
           <div className="center-text">
             <div className="center-description">
           <p><b>
-            Nuestro próposito es utilizar la danza como una forma de adoración y
-            expresión espiritual, glorificando a Dios a través del movimiento y
-            el arte. Tenemos como objetivo glorificar a Dios y enriquecer la
-            vida de la iglesia mediante la danza, ofreciendo una forma creativa
-            y poderosa de adorar, comunicar mensajes bíblicos, y conectar con la
-            congregación y la comunidad en general.
+            Misión: estar siempre vigilantes puestos en la brecha en oración y
+            ayuno por nuestra pastores, lideres, iglesia , familiares amigos,
+            nuestra comunidad, y nuestros paises.
             </b></p>
             </div>
           </div>
         </div>
-        <Gallery/>
       </div>
     </>
   );

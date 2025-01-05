@@ -1,5 +1,5 @@
 // import React from 'react'
-import "../../assets/css/styles.css";
+import "../../assets/css/pages/ministries/groups.css";
 import nextEvent from "../../assets/images/small-groups.jpg";
 export const Groups = () => {
   return (

@@ -1,0 +1,183 @@
+   .content-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  /*Mission Vision*/
+  .container-mission-vision {
+    margin: 250px 0 100px 0;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+    width: 100%;
+    height: 600px;
+  }
+  .mission-vision {
+    width: 60%;
+    min-height: 500px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px;
+  }
+  .mission-vision-text {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    color: var(--blue-one);;
+    padding: 50px;
+  }
+  .mission-vision p {
+    font-size: 20px;
+    color: #000;
+    font-family: "Montserrat";
+  }
+  .mission-vision h3 {
+    text-align: left;
+    font-weight: 700;
+    color: var(--blue-one);
+    
+  }
+  .mission-vision-img {
+    max-width: 500px;
+    max-height: 750px;
+    margin-right: 20px;
+    border-radius: 10px;
+    margin-bottom: 200px;
+  }
+
+  .video {
+    display: flex;
+    width: 600px;
+    height: 400px;
+  }
+  .container-video {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: 20px 0 400px 200px;
+  }
+  .font-video {
+    width: 1050px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: 1; 
+    background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, var(--blue-tree) 71%);
+  }
+  .youtube-text {
+    width: 450px;
+    height: 250px;
+    position: absolute;
+    top: 310px;
+    left: 800px;
+    z-index: 2;
+  }
+  .youtube {
+    width: 700px;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    left: 809px;
+    z-index: 2; 
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--blue-one);;
+  }
+  .tube{
+    color: #fff;
+    background-color: #FE0000;
+    padding: 3px;
+    border-radius: 15px;
+  }
+  .video-text {
+    padding: 40px 20px 0 20px;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+  .url-canal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: #FE0000;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+  }
+  .url-canal:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    color: aliceblue;
+    font-style: oblique;
+    font-size: 30px;
+  }
+  
+
+  /*Join*/
+  .join-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    width: 100%;
+    height: 300px;
+    background-color: #041D3C;
+  }
+  .join-us h1 {
+    font-size: 40px;
+    margin-top: 50px;
+    color: #fff;
+  }
+  .join-us p {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  /*Map*/
+  .location-us {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--blue-one);
+    font-family: "Montserrat";
+    background-color: #fff;
+  }
+  .content-map {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .map {
+    display: flex;
+    width: 100%;
+    height: 350px;
+  }
+
+  
