@@ -1,25 +1,25 @@
 // import React from 'react'
-import "../../assets/css/styles.css";
+import "../../assets/css/pages/ministries/woman.css";
 import nextEvent from "../../assets/images/small-groups.jpg";
 import Gallery from "../../components/Gallery";
-export const RoyalRangersKids = () => {
+export const Women = () => {
   return (
     <>
       <div className="section-page-header header-page-title">
         <div className="section-page-header-name">
-          ROYAL RANGERS
+          MUJERES
         </div>
       </div>
-      <div className="content">
+      <div className="content">     
       <div className="container-center center-fade-in-bottom">
           <img src={nextEvent} alt="" className="center-img"/>
           <div className="center-text">
             <div className="center-description">
           <p><b>
-            The royal rangers is a ministry for boys and young men in grades
-            K-12 and our mission is to evangelize, equip and empower the next
-            generation so they may become Christlike men and lifelong servant
-            leaders.
+            Nuestro propósito es proporcionar un espacio donde las mujeres
+            puedan crecer en su fe, recibir apoyo espiritual, desarrollar
+            relaciones con otras mujeres, y que sean un reflejo del amor de
+            Cristo en todas las áreas de sus vidas.
             </b></p>
             </div>
           </div>

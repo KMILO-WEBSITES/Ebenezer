@@ -1,0 +1,74 @@
+
+.doctrine-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .doctrine-us {
+      display: flex;
+      flex-wrap: wrap;    
+      gap: 16px;
+      margin-top: 50px;
+      padding: 0 150px 10px 150px;
+  }
+  .doctrine {
+      flex: 1 1 calc(33.333% - 16px);
+      box-sizing: border-box;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+      text-align: justify;
+      font-family: 'Georgia', serif; 
+      background-image: url('../../../images/believe/pergamino.png'); 
+      background-size: cover; 
+      height: auto;
+      -webkit-animation: doctrine-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+      animation: doctrine-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+  }
+  .doctrine h2 {
+      font-family: 'Georgia', serif;
+      color: #5a4b2e; 
+      text-align: center;
+  }
+  
+  .doctrine p {
+      color: #4f3d21; 
+  }
+  @-webkit-keyframes doctrine-focus-in {
+      0% {
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+      }
+    }
+    @keyframes doctrine-focus-in {
+      0% {
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+      }
+    }
+  @media (max-width: 768px) {
+      .doctrine {
+          flex: 1 1 calc(50% - 16px); 
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .doctrine {
+          flex: 1 1 100%; 
+      }
+  }

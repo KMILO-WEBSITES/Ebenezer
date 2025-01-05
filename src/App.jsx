@@ -1,6 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import { Routes, Route } from 'react-router-dom';
+import "../src/assets/css/base.css";
+import "../src/assets/css/utils/variables.css";
+import "../src/assets/css/utils/mixins.css";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -16,15 +19,15 @@ import { Shepherds } from './pages/us/Shepherds';
 import { History } from './pages/us/History';
 import { Believe } from './pages/us/Believe';
 
-import { Groups } from './pages/ministeries/Groups';
-import { Women } from './pages/ministeries/Women';
-import { Men } from './pages/ministeries/Men';
-import { RoyalRangersKids } from './pages/ministeries/RoyalRangersKids';
-import { Worship } from './pages/ministeries/Worship';
-import { Young } from './pages/ministeries/Young';
-import { Dance } from './pages/ministeries/Dance';
-import { Intercession } from './pages/ministeries/Intercession';
-import { Kids } from './pages/ministeries/Kids';
+import { Groups } from './pages/ministries/Groups';
+import { Women } from './pages/ministries/Women';
+import { Men } from './pages/ministries/Men';
+import { RoyalRangersKids } from './pages/ministries/RoyalRangersKids';
+import { Worship } from './pages/ministries/Worship';
+import { Young } from './pages/ministries/Young';
+import { Dance } from './pages/ministries/Dance';
+import { Intercession } from './pages/ministries/Intercession';
+import { Kids } from './pages/ministries/Kids';
 
 function App() {
   return (

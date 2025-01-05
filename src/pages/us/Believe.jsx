@@ -1,5 +1,5 @@
 // import React from 'react'
-import "../../assets/css/styles.css";
+import "../../assets/css/pages/us/believe.css";
 export const Believe = () => {
   return (
     <>
@@ -8,8 +8,7 @@ export const Believe = () => {
           QUE CREEMOS
         </div>
       </div>
-      <div className="content">
-      <h2 className="doctrine-title">NUESTRAS 16 DOCTRINAS</h2>
+      <div className="doctrine-title">NUESTRAS 16 DOCTRINAS</div>      
         <section className="doctrine-us">        
           <div className="doctrine">
             <p>
@@ -261,7 +260,7 @@ export const Believe = () => {
             </p>
           </div>
         </section>
-      </div>
+     
     </>
   );
 };

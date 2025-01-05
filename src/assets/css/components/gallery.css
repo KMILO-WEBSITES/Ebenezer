@@ -4,9 +4,9 @@
     flex-wrap: wrap;
     gap: 10px; /* Espacio entre las imágenes */
     justify-content: center; /* Centra las imágenes horizontalmente */
-    margin: 100px 0 0 0;
+    margin: 80px 0 0 0;
     padding: 50px 100px 50px 100px ;
-    background-color: #FEFAE0;
+    /* background-color: #2793EB; */
   }
   
   .gallery-item {

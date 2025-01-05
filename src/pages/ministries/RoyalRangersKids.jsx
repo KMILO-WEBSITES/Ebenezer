@@ -1,12 +1,13 @@
 // import React from 'react'
-import "../../assets/css/styles.css";
+import "../../assets/css/pages/ministries/rangers.css";
 import nextEvent from "../../assets/images/small-groups.jpg";
-export const Intercession = () => {
+import Gallery from "../../components/Gallery";
+export const RoyalRangersKids = () => {
   return (
     <>
       <div className="section-page-header header-page-title">
         <div className="section-page-header-name">
-          INTERCEPCIÓN
+          ROYAL RANGERS
         </div>
       </div>
       <div className="content">
@@ -15,13 +16,15 @@ export const Intercession = () => {
           <div className="center-text">
             <div className="center-description">
           <p><b>
-            Misión: estar siempre vigilantes puestos en la brecha en oración y
-            ayuno por nuestra pastores, lideres, iglesia , familiares amigos,
-            nuestra comunidad, y nuestros paises.
+            The royal rangers is a ministry for boys and young men in grades
+            K-12 and our mission is to evangelize, equip and empower the next
+            generation so they may become Christlike men and lifelong servant
+            leaders.
             </b></p>
             </div>
           </div>
         </div>
+        <Gallery/>
       </div>
     </>
   );

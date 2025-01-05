@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --blue-one: #021323;
+  --blue-two: #041D3C;
+  --blue-tree: #96BCEB;
+  --blue-for: #125486;
+  --blue-five: #2793EB;
 }
 
 a {
@@ -12,6 +17,7 @@ a {
 li {
   list-style: none;
 }
+
 .logo{
     margin-left: 150px;
 }
@@ -22,18 +28,12 @@ li {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* background-color:rgba(0, 0, 0, 0.801); */
-    background-color:rgba(0, 0, 0, 0.897);
+    background-color: var(--blue-one);
     border: none;
     width: 100%;
-    /* position: fixed;  */
     top: 0; 
     z-index: 100;
     height: 100px;
-}
-
-.nav-links a {
-  color: #fff;
 }
 
 /* NAVBAR MENU */
@@ -44,10 +44,16 @@ li {
   margin-right: 250px;
 }
 
+.nav-links a {
+  color: #fff;
+}
+.nav-links a:hover {
+  color: var(--blue-five);
+}
+
 .menu li:hover {
-  background-color: rgba(175, 173, 173, 0.308);
-  border-radius: 5px;
-  transition: 0.3s ease;
+  color: #000;
+  border-radius: 20px;
 }
 
 .menu li {
@@ -60,11 +66,10 @@ li {
 }
 
 .dropdown {
-  background-color: rgba(0, 0, 0, 0.801);
-  padding: 1em 0;
-  position: absolute; /*WITH RESPECT TO PARENT*/
+  background-color: var(--blue-one);
+  padding: 1em 0.2em;
+  position: absolute;
   display: none;
-  border-radius: 8px;
   top: 37px;
   width: 220px;
 }
@@ -74,13 +79,9 @@ li {
 }
 
 .dropdown li {
-  padding: 0.5em 1em;
+  padding: 0.3em 1em;
   width: auto;
   text-align: left;
-}
-
-.dropdown li:hover {
-  background-color: rgba(175, 173, 173, 0.308);
 }
 
 .dropdown-sub:hover .dropdown {
@@ -106,7 +107,7 @@ input[type=checkbox] {
  .menu {
     display:none;
     position: absolute;
-    background-color:rgba(0, 0, 0, 0.801);
+    background-color:#021323;
     right: 0;
     left: 0;
     text-align: center;
@@ -115,7 +116,7 @@ input[type=checkbox] {
 
   .menu li:hover {
     display: inline-block;
-    background-color:rgba(0, 0, 0, 0.801);
+    background-color:#021323;
     transition: 0.3s ease;
   }
 
@@ -138,6 +139,6 @@ input[type=checkbox] {
   }
 
   .dropdown li:hover {
-    background-color: rgba(0, 0, 0, 0.801);
+    background-color:#021323;
   }
 }
