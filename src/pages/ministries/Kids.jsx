@@ -1,8 +1,10 @@
-// import React from 'react'
 import "../../assets/css/pages/ministries/kids.css";
 import kidsImag from "../../assets/images/small-church-kids.jpg";
-import Gallery from "../../components/Gallery";
+import { Gallery } from "../../components/Gallery";
 export const Kids = () => {
+  const path = "kids/";
+  const countImg = 7;
+  const nameImg = "kids";
   return (
     <>
       <div className="section-page-header header-page-title">
@@ -10,7 +12,6 @@ export const Kids = () => {
           NIÑOS
         </div>
       </div>
-      <div className="content">
         <div className="container-center center-fade-in-bottom">
           <img src={kidsImag} alt="" className="center-img"/>
           <div className="center-text">
@@ -29,8 +30,7 @@ export const Kids = () => {
             </div>
           </div>
         </div>
-        <Gallery/>
-      </div>
+        <Gallery path={path} countImg={countImg} nameImg={nameImg} />
     </>
   );
 };

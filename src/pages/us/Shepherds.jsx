@@ -9,7 +9,6 @@ export const Shepherds = () => {
           NUESTROS PASTORES
         </div>
       </div>
-      <div className="content">
         <div className="container-center center-fade-in-bottom">
           <img src={shepherds} alt="Pastores" className="center-img" />
           <div className="center-text">
@@ -27,7 +26,6 @@ export const Shepherds = () => {
               </p>
             </div>
           </div>
-        </div>        
       </div>
     </>
   );

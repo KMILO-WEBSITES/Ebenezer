@@ -1,7 +1,7 @@
 // import React from 'react'
 import "../../assets/css//pages/ministries/dance.css";
 import nextEvent from "../../assets/images/small-groups.jpg";
-import Gallery from "../../components/Gallery";
+// import Gallery from "../../components/Gallery";
 export const Dance = () => {
   return (
     <>
@@ -26,7 +26,7 @@ export const Dance = () => {
             </div>
           </div>
         </div>
-        <Gallery/>
+        {/* <Gallery/> */}
       </div>
     </>
   );

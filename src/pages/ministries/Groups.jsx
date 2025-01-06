@@ -1,6 +1,6 @@
 // import React from 'react'
 import "../../assets/css/pages/ministries/groups.css";
-import nextEvent from "../../assets/images/small-groups.jpg";
+import nextEvent from "../../assets/images/group/group1.jpg";
 export const Groups = () => {
   return (
     <>
@@ -9,7 +9,6 @@ export const Groups = () => {
           GRUPOS PEQUEÑOS
         </div>
       </div>
-      <div className="content">
       <div className="container-center center-fade-in-bottom">       
         <img src={nextEvent} alt="" className="center-img"/>       
         <div className="center-text">
@@ -24,7 +23,6 @@ export const Groups = () => {
           </div>
         </div>        
           <div>
-        </div>
       </div>             
     </>
   );
