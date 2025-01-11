@@ -1,6 +1,6 @@
 // import React from 'react'
 import "../../assets/css/pages/ministries/rangers.css";
-import nextEvent from "../../assets/images/small-groups.jpg";
+import royal from "../../assets/images/royal/1.png";
 // import Gallery from "../../components/Gallery";
 export const RoyalRangersKids = () => {
   return (
@@ -12,7 +12,7 @@ export const RoyalRangersKids = () => {
       </div>
       <div className="content">
       <div className="container-center center-fade-in-bottom">
-          <img src={nextEvent} alt="" className="center-img"/>
+          <img src={royal} alt="" className="center-img"/>
           <div className="center-text">
             <div className="center-description">
           <p><b>

@@ -1,6 +1,6 @@
 // import React from 'react'
 import "../../assets/css/pages/ministries/intercession.css";
-import nextEvent from "../../assets/images/small-groups.jpg";
+import inter from "../../assets/images/intercesion/1.png";
 export const Intercession = () => {
   return (
     <>
@@ -9,9 +9,8 @@ export const Intercession = () => {
           INTERCESIÓN
         </div>
       </div>
-      <div className="content">
       <div className="container-center center-fade-in-bottom">
-          <img src={nextEvent} alt="" className="center-img"/>
+          <img src={inter} alt="" className="center-img"/>
           <div className="center-text">
             <div className="center-description">
           <p><b>
@@ -21,7 +20,6 @@ export const Intercession = () => {
             </b></p>
             </div>
           </div>
-        </div>
       </div>
     </>
   );

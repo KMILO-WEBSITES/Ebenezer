@@ -1,6 +1,6 @@
 // import React from 'react'
 import "../../assets/css/pages/ministries/worship.css";
-import nextEvent from "../../assets/images/small-groups.jpg";
+import worship from "../../assets/images/adoracion/1.png";
 export const Worship = () => {
   return (
     <>
@@ -9,9 +9,8 @@ export const Worship = () => {
           ADORACIÓN 
           </div>
       </div>
-      <div className="content">
       <div className="container-center center-fade-in-bottom">
-          <img src={nextEvent} alt="" className="center-img"/>
+          <img src={worship} alt="" className="center-img"/>
           <div className="center-text">
             <div className="center-description">
           <p><b>
@@ -25,7 +24,6 @@ export const Worship = () => {
             manera profunda, auténtica, y transformadora.
             </b></p>
             </div>
-          </div>
         </div>
       </div>
     </>

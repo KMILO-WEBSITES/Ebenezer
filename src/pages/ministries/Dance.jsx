@@ -1,6 +1,6 @@
 // import React from 'react'
 import "../../assets/css//pages/ministries/dance.css";
-import nextEvent from "../../assets/images/small-groups.jpg";
+import dance from "../../assets/images/dance/1.png";
 // import Gallery from "../../components/Gallery";
 export const Dance = () => {
   return (
@@ -10,9 +10,8 @@ export const Dance = () => {
           DANZA
         </div>
       </div>
-      <div className="content">
       <div className="container-center center-fade-in-bottom">
-          <img src={nextEvent} alt="" className="center-img"/>
+          <img src={dance} alt="" className="center-img"/>
           <div className="center-text">
             <div className="center-description">
           <p><b>
@@ -24,7 +23,6 @@ export const Dance = () => {
             congregación y la comunidad en general.
             </b></p>
             </div>
-          </div>
         </div>
         {/* <Gallery/> */}
       </div>

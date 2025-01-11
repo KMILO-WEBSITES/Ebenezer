@@ -1,6 +1,6 @@
 import "../../assets/css/pages/ministries/woman.css";
-import nextEvent from "../../assets/images/small-groups.jpg";
-import { Gallery } from "../../components/Gallery";
+import women from "../../assets/images/women/1.png";
+// import { Gallery } from "../../components/Gallery";
 export const Women = () => {
   return (
     <>
@@ -9,9 +9,8 @@ export const Women = () => {
           MUJERES
         </div>
       </div>
-      <div className="content">     
       <div className="container-center center-fade-in-bottom">
-          <img src={nextEvent} alt="" className="center-img"/>
+          <img src={women} alt="" className="center-img"/>
           <div className="center-text">
             <div className="center-description">
           <p><b>
@@ -22,8 +21,7 @@ export const Women = () => {
             </b></p>
             </div>
           </div>
-        </div>
-        <Gallery/>
+        {/* <Gallery/> */}
       </div>
     </>
   );
