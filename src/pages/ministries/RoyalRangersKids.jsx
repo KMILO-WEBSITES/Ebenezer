@@ -2,14 +2,11 @@
 import "../../assets/css/pages/ministries/rangers.css";
 import royal from "../../assets/images/royal/1.png";
 // import Gallery from "../../components/Gallery";
+import { SectionName } from "../../components/SectionName"
 export const RoyalRangersKids = () => {
   return (
     <>
-      <div className="section-page-header header-page-title">
-        <div className="section-page-header-name">
-          ROYAL RANGERS
-        </div>
-      </div>
+      <SectionName sectionName={"ROYAL RANGERS"}/>
       <div className="content">
       <div className="container-center center-fade-in-bottom">
           <img src={royal} alt="" className="center-img"/>

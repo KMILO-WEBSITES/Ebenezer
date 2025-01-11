@@ -1,14 +1,11 @@
 import "../../assets/css/pages/ministries/woman.css";
 import women from "../../assets/images/women/1.png";
 // import { Gallery } from "../../components/Gallery";
+import { SectionName } from "../../components/SectionName"
 export const Women = () => {
   return (
     <>
-      <div className="section-page-header header-page-title">
-        <div className="section-page-header-name">
-          MUJERES
-        </div>
-      </div>
+      <SectionName sectionName={"MUJERES"}/>
       <div className="container-center center-fade-in-bottom">
           <img src={women} alt="" className="center-img"/>
           <div className="center-text">

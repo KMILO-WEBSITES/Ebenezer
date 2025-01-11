@@ -3,14 +3,11 @@ import '../assets/css/base.css';
 import event1 from "../assets/images/accion_de_gracias.jpg";
 import event2 from "../assets/images/aniversario.jpg";
 import event3 from "../assets/images/event_mujeres.png";
+import { SectionName } from "../components/SectionName"
 export const Events = () => {
   return (
     <>
-    <div className="section-page-header header-page-title">
-        <div className="section-page-header-name">
-          EVENTOS
-        </div>
-      </div>
+    <SectionName sectionName={"EVENTOS"}/>
       <div className="content">
       <div className="container-center center-fade-in-bottom">
           <img src={event1} alt="" className="center-img"/>

@@ -2,14 +2,11 @@
 import "../../assets/css//pages/ministries/dance.css";
 import dance from "../../assets/images/dance/1.png";
 // import Gallery from "../../components/Gallery";
+import { SectionName } from "../../components/SectionName"
 export const Dance = () => {
   return (
     <>
-      <div className="section-page-header header-page-title">
-        <div className="section-page-header-name">
-          DANZA
-        </div>
-      </div>
+      <SectionName sectionName={"DANZA"}/>
       <div className="container-center center-fade-in-bottom">
           <img src={dance} alt="" className="center-img"/>
           <div className="center-text">

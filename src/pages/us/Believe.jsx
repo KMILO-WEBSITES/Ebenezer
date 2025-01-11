@@ -1,13 +1,10 @@
 // import React from 'react'
 import "../../assets/css/pages/us/believe.css";
+import { SectionName } from "../../components/SectionName"
 export const Believe = () => {
   return (
     <>
-      <div className="section-page-header header-page-title">
-        <div className="section-page-header-name">
-          QUE CREEMOS
-        </div>
-      </div>
+      <SectionName sectionName={"QUE CREEMOS"}/>
       <div className="doctrine-title">NUESTRAS 16 DOCTRINAS</div>      
         <section className="doctrine-us">        
           <div className="doctrine">

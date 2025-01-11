@@ -2,14 +2,11 @@
 import "../../assets/css/pages/ministries/men.css";
 import men from "../../assets/images/man/1.png";
 // import Gallery from "../../components/Gallery";
+import { SectionName } from "../../components/SectionName";
 export const Men = () => {
   return (
     <>
-     <div className="section-page-header header-page-title">
-     <div className="section-page-header-name">
-          HOMBRES
-        </div>
-      </div>
+     <SectionName sectionName={"HOMBRES"}/>
       <div className="container-center center-fade-in-bottom">
           <img src={men} alt="" className="center-img"/>
           <div className="center-text">

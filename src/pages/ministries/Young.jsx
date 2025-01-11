@@ -1,14 +1,11 @@
 // import React from 'react'
 import "../../assets/css/pages/ministries/young.css";
 import youngImg from "../../assets/images/young/young1.png";
+import { SectionName } from "../../components/SectionName"
 export const Young = () => {
   return (
     <>
-      <div className="section-page-header header-page-title">
-        <div className="section-page-header-name">
-          JÓVENES
-        </div>
-      </div>
+      <SectionName sectionName={"JÓVENES"}/>
         <div className="container-center center-fade-in-bottom">          
             <img src={youngImg} alt="" className="center-img" />          
             <div className="center-text">

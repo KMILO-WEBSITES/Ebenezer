@@ -1,17 +1,14 @@
 import "../../assets/css/pages/ministries/kids.css";
 import kidsImag from "../../assets/images/small-church-kids.jpg";
 import { Gallery } from "../../components/Gallery";
+import { SectionName } from "../../components/SectionName"
 export const Kids = () => {
   const path = "kids/";
   const countImg = 7;
   const nameImg = "kids";
   return (
     <>
-      <div className="section-page-header header-page-title">
-        <div className="section-page-header-name">
-          NIÑOS
-        </div>
-      </div>
+      <SectionName sectionName={"NIÑOS"}/>
         <div className="container-center center-fade-in-bottom">
           <img src={kidsImag} alt="" className="center-img"/>
           <div className="center-text">

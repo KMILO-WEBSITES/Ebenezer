@@ -1,14 +1,11 @@
 // import React from 'react'
 import "../../assets/css/pages/ministries/groups.css";
 import nextEvent from "../../assets/images/group/group1.jpg";
+import { SectionName } from "../../components/SectionName"
 export const Groups = () => {
   return (
     <>
-      <div className="section-page-header header-page-title">
-        <div className="section-page-header-name">
-          GRUPOS PEQUEÑOS
-        </div>
-      </div>
+      <SectionName sectionName={"GRUPOS PEQUEÑOS"}/>
       <div className="container-center center-fade-in-bottom">       
         <img src={nextEvent} alt="" className="center-img"/>       
         <div className="center-text">

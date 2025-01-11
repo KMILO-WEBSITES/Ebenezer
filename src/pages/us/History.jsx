@@ -1,14 +1,11 @@
 // import React from 'react'
 import '../../assets/css/pages/us/history.css';
 import history from "../../assets/images/history/1.jpg";
+import { SectionName } from "../../components/SectionName"
 export const History = () => {
   return (
     <>
-    <div className="section-page-header header-page-title">
-    <div className="section-page-header-name">
-          HISTORIA DE LA IGLESIA
-        </div>
-    </div>
+    <SectionName sectionName={"HISTORIA DE LA IGLESIA"}/>
     <div className="center-fade-in-bottom">
           <img src={history} alt="" className="center-img"/>
           
