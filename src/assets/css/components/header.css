@@ -1,3 +1,9 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* UTILITIES */
 * {
   /* box-sizing: border-box; */
@@ -9,7 +15,6 @@
 }
 .card {
   width: 100%;
-  border: 0;
 }
 #root{
   width: 100%;
@@ -28,7 +33,7 @@
   text-decoration: none;
 }
 .p-menuitem-link:hover {
-border: none;
+border: none !important;
 
 }
 .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
@@ -48,8 +53,6 @@ border: none;
   .custom-menubar {
     display: flex;
     justify-content: space-between;
-    border: 0;
-    border-radius: 0;
   }
   .p-menubar .p-menubar-button {
       display: flex;
@@ -64,13 +67,10 @@ border: none;
 @media screen and (max-width: 425px) {
   .card {
     width: 100%;
-    border: 0;
   }
   .custom-menubar {
     display: flex;
     justify-content: space-between;
-    border: 0;
-    border-radius: 0;
   }
   .p-menubar .p-menubar-button {
       display: flex;
