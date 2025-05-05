@@ -1,103 +1,191 @@
-.logo{
+.logo {
   width: 120px;
   height: 110px;
 }
- .content-footer {
+
+.content-footer {
   display: flex;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
-  height: 300px;
-  background-color:rgba(0, 0, 0, 0.897);
+  min-height: 300px;
+  background-color: rgba(0, 0, 0, 0.897);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20%;
+  margin: 30px 0 20px 0;
+}
+
+.footer-text b {
+  font-style: oblique;
+  color: aliceblue;
+  text-decoration: underline;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+.footer-text p {
+  color: aliceblue;
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.section-media-text {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.section-text p {
+  font-style: oblique;
+  color: aliceblue;
+}
+
+/* Redes sociales */
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+.containerOne:hover {
+  background-color: rgb(175, 5, 5);
+}
+.containerTwo:hover {
+  background-color: #0866ff;
+}
+.containerThree:hover {
+  background-color: #a018a5;
+}
+.containerFour:hover {
+  background-color: #4bbd7a;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  font-size: 25px;
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
   }
-  .section-footer{
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 💥 Media Queries para RESPONSIVE */
+@media (max-width: 1024px) { 
+  .section-footer {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+  }
+  .footer-text{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 20%;
-    height: auto;
-    margin: 30px 0 20px 0;
+    align-items: center;
   }
   .footer-text b {
-    font-style: oblique; 
-    color: aliceblue;
-    text-decoration: underline;
-    font-size: 16px;
-    padding: 5px 10px 5px 10px;
-    border-radius: 25px;
-    }
-  .section-text {
-      display: flex;
-      flex-direction: column;
-      font-size: 14px;
-      margin: 20px 0 0 0;
-    }
-    .section-media-text {
-      display: flex;
-      flex-direction: row;
-      margin: 20px 0 0 0;
-    }
-  .section-text p{
-    font-style: oblique; 
+    font-size: 12px;
+  }
+  .footer-text p {    
+    font-size: 11px;
     color: aliceblue;
   }
- 
-  /* for all social containers*/
-  .socialContainer {
-    width: 52px;
-    height: 52px;
-    background-color:transparent;
-    display: flex;
+}
+
+@media (max-width: 768px) {  
+  .section-footer {
+    width: 100%;
     align-items: center;
+    text-align: center;
+    height: 50px;
+  }
+  .footer-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-text b {
+    font-size: 12px;
+  }
+  .footer-text p {    
+    font-size: 11px;
+    color: aliceblue;
+  }
+  .section-media-text {
     justify-content: center;
-    overflow: hidden;
-    transition-duration: .3s;
+    flex-wrap: wrap;
+    gap: 10px;
   }
-  /* youtube*/
-  .containerOne:hover {
-    background-color: rgb(175, 5, 5);
-    transition-duration: .3s;
+
+  .logo {
+    width: 80px;
+    height: auto;
   }
-  /* facebook*/
-  .containerTwo:hover {
-    background-color: #0866ff;
-    transition-duration: .3s;
+}
+
+@media (max-width: 480px) {
+  .section-footer {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    height: 50px;
   }
-  /* instangam*/
-  .containerThree:hover {
-    background-color: #a018a5;
-    transition-duration: .3s;
+  .footer-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  /* Whatsapp*/
-  .containerFour:hover {
-    background-color: #4bbd7a;
-    transition-duration: .3s;
+  .footer-text b {
+    font-size: 12px;
   }
-  
-  .socialContainer:active {
-    transform: scale(0.9);
-    transition-duration: .3s;
+  .footer-text p {    
+    font-size: 11px;
+    color: aliceblue;
   }
-  
+
+  .section-text {
+    font-size: 8px;
+  }
+
+  .socialContainer {
+    width: 44px;
+    height: auto;
+  }
+
   .socialSvg {
-    font-size: 25px;
-    fill: rgb(255, 255, 255);
+    font-size: 20px;
   }
-  
-  .socialContainer:hover .socialSvg {
-    animation: slide-in-top 0.3s both;
-  }
-  
-  @keyframes slide-in-top {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-  
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  
+}

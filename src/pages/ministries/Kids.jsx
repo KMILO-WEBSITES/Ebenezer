@@ -1,19 +1,20 @@
-import "../../assets/css/pages/ministries/kids.css";
+import "../../assets/css/base.css";
 import kidsImag from "../../assets/images/small-church-kids.jpg";
 import { Gallery } from "../../components/Gallery";
-import { SectionName } from "../../components/SectionName"
+import { SectionName } from "../../components/SectionName";
 export const Kids = () => {
   const path = "kids/";
   const countImg = 7;
   const nameImg = "kids";
   return (
     <>
-      <SectionName sectionName={"NIÑOS"}/>
-        <div className="container-center center-fade-in-bottom">
-          <img src={kidsImag} alt="" className="center-img"/>
-          <div className="center-text">
-            <div className="center-description">
-          <p><b>
+      <SectionName sectionName={"NIÑOS"} />
+      <div className="contenedor">
+        <div className="imagen">
+          <img src={kidsImag} />
+        </div>
+        <div className="descripcion">
+          <p>
             Nuestro propósito es proporcionar una base sólida en la fe desde una
             edad temprana, enseñando a los niños acerca de Dios, la Biblia, y
             los principios cristianos en un entorno seguro, amoroso y adecuado
@@ -23,11 +24,10 @@ export const Kids = () => {
             los niños en sus primeros pasos de fe, ayudándolos a conocer y amar
             a Dios, aprender la Biblia, y vivir de acuerdo con los principios
             cristianos, todo dentro de un entorno seguro y lleno de amor.
-            </b></p>
-            </div>
-          </div>
+          </p>
         </div>
-        <Gallery path={path} countImg={countImg} nameImg={nameImg} />
+      </div>
+      <Gallery path={path} countImg={countImg} nameImg={nameImg} />
     </>
   );
 };

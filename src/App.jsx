@@ -13,12 +13,10 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 
 import { Home } from './pages/Home';
-import { Events } from './pages/Events';
 
 import { Shepherds } from './pages/us/Shepherds';
 import { History } from './pages/us/History';
 import { Believe } from './pages/us/Believe';
-
 import { Groups } from './pages/ministries/Groups';
 import { Women } from './pages/ministries/Women';
 import { Men } from './pages/ministries/Men';
@@ -28,6 +26,7 @@ import { Young } from './pages/ministries/Young';
 import { Dance } from './pages/ministries/Dance';
 import { Intercession } from './pages/ministries/Intercession';
 import { Kids } from './pages/ministries/Kids';
+import { Ministeries } from './pages/Ministeries';
 
 function App() {
   return (
@@ -35,10 +34,10 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/events' element={<Events />} />
         <Route path='/shepherds' element={<Shepherds />} />
         <Route path='/history' element={<History />} />
         <Route path='/believe' element={<Believe />} />
+        <Route path='/ministeries' element={<Ministeries />} />
         <Route path='/groups' element={<Groups />} />
         <Route path='/women' element={<Women />} />
         <Route path='/men' element={<Men />} />
