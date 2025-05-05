@@ -1,183 +1,263 @@
-   .content-all {
+/* Variables recomendadas */
+:root {
+  --font-main: "Montserrat", sans-serif;
+  --blue-one: #003366;
+  --blue-tree: #336699;
+  --youtube-red: #FE0000;
+}
+
+/* Estilos base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.content-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Mission / Vision */
+.container-mission-vision {
+  margin: 0 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+}
+
+.mission-vision {
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.mission-vision h3 {
+  text-align: left;
+  font-weight: 700;
+  color: var(--blue-one);
+  font-size: 20px;
+}
+
+.mission-vision p {
+  font-size: 18px;
+  color: #000;
+}
+
+.mission-vision-text {
+  width: 100%;
+  font-size: clamp(15px, 4vw, 20px);
+  font-weight: 700;
+  color: var(--blue-one);
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.mission-vision-img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Video Section */
+.container-video {
+  width: 100%;
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.font-video {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, var(--blue-tree) 71%);
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.youtube-text,
+.youtube {
+  position: relative;
+  z-index: 2;
+  color: var(--blue-one);
+}
+
+.youtube {
+  font-size: clamp(20px, 4vw, 40px);
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.tube {
+  color: #fff;
+  background-color: var(--youtube-red);
+  padding: 3px 8px;
+  border-radius: 15px;
+}
+.video {
+  width: 100%;
+  height: 200px;
+}
+.video-text {
+  padding: 10px;
+}
+
+.url-canal {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--youtube-red);
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 200px;
+}
+
+.url-canal:hover {
+  background-color: #000;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: aliceblue;
+  font-style: oblique;
+  font-size: clamp(20px, 4vw, 30px);
+  text-align: center;
+}
+
+/* Us */
+.info-banner {
+  width: 100%;
+  height: 300px;
+  background-image: url('../../images/banner-Bible.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-text {
+  width: 100%;
+  color: white;
+  z-index: 1;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: clamp(20px, 4vw, 40px);
+}
+
+.info-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+/* Map */
+.location-us {
+  margin-top: 0;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--blue-one);
+  text-align: center;
+}
+
+.content-map,
+.map {
+  width: 100%;
+  height: 400px;
+}
+
+/* ========== Breakpoints (Desktop First) ========== */
+@media (min-width: 768px) {
+  .mission-vision {
+    padding: 40px 20px;
+  }
+
+  .mission-vision-img {
+    max-height: 600px;
+    padding: 0;
+  }
+
+  .url-canal {
+    width: 100%;
+  }
+
+  .info-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: auto;
-  }
-  /*Mission Vision*/
-  .container-mission-vision {
-    margin: 250px 0 100px 0;
-    display: flex;
-    align-items: center; 
-    justify-content: space-around; 
-    width: 100%;
-    height: 600px;
-  }
-  .mission-vision {
-    width: 60%;
-    min-height: 500px;
-    border-radius: 10px;
-    text-align: center;
-    padding: 50px;
-  }
-  .mission-vision-text {
-    display: flex;
     justify-content: center;
-    align-items: center; 
-    width: 100%;
-    font-size: 40px;
-    font-weight: 700;
-    font-family: "Montserrat";
-    color: var(--blue-one);;
-    padding: 50px;
-  }
-  .mission-vision p {
-    font-size: 20px;
-    color: #000;
-    font-family: "Montserrat";
-  }
-  .mission-vision h3 {
-    text-align: left;
-    font-weight: 700;
-    color: var(--blue-one);
-    
-  }
-  .mission-vision-img {
-    max-width: 500px;
-    max-height: 750px;
-    margin-right: 20px;
-    border-radius: 10px;
-    margin-bottom: 200px;
   }
 
   .video {
-    display: flex;
-    width: 600px;
+    width: 100%;
     height: 400px;
   }
-  .container-video {
-    position: relative;
+}
+
+@media (min-width: 1024px) {
+  .container-mission-vision {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 100px 0;
+  }
+
+  .mission-vision {
+    max-width: 600px;
+  }
+
+  .info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .location-us {
+    font-size: clamp(10px, 4vw, 22px);
+    padding: 0 10px;
+  }
+  .video{
     width: 100%;
-    height: 200px;
-    margin: 20px 0 400px 200px;
-  }
-  .font-video {
-    width: 1050px;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 100px;
-    z-index: 1; 
-    background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, var(--blue-tree) 71%);
-  }
-  .youtube-text {
-    width: 450px;
-    height: 250px;
-    position: absolute;
-    top: 310px;
-    left: 800px;
-    z-index: 2;
-  }
-  .youtube {
-    width: 700px;
-    height: 100px;
-    position: absolute;
-    top: 150px;
-    left: 809px;
-    z-index: 2; 
-    font-size: 40px;
-    font-weight: 700;
-    color: var(--blue-one);;
-  }
-  .tube{
-    color: #fff;
-    background-color: #FE0000;
-    padding: 3px;
-    border-radius: 15px;
+    height: 500px;
   }
   .video-text {
-    padding: 40px 20px 0 20px;
-    width: auto;
-    height: auto;
-    background-color: transparent;
+    padding: 20px;
   }
+
   .url-canal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 200px;
-    background-color: #FE0000;
-    color: #fff;
-    border-radius: 8px;
-    border: none;
-    padding: 5px 5px;
-    cursor: pointer;
   }
-  .url-canal:hover {
-    background-color: #000;
-    color: #fff;
-    transition: 0.3s ease;
-    cursor: pointer;
-  }
-  .text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    color: aliceblue;
-    font-style: oblique;
-    font-size: 30px;
-  }
-  
-
-  /*Join*/
-  .join-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 40px;
-    font-weight: 700;
-    font-family: "Montserrat";
-    width: 100%;
-    height: 300px;
-    background-color: #041D3C;
-  }
-  .join-us h1 {
-    font-size: 40px;
-    margin-top: 50px;
-    color: #fff;
-  }
-  .join-us p {
-    font-size: 20px;
-    color: #fff;
-  }
-
-  /*Map*/
-  .location-us {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    font-size: 40px;
-    font-weight: 700;
-    color: var(--blue-one);
-    font-family: "Montserrat";
-    background-color: #fff;
-  }
-  .content-map {
-    display: flex;
-    width: 100%;
-    height: auto;
-  }
-  .map {
-    display: flex;
-    width: 100%;
-    height: 350px;
-  }
-
-  
+}

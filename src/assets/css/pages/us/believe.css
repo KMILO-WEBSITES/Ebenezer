@@ -1,74 +1,94 @@
-
-.doctrine-title {
+/* =======================
+   MOBILE FIRST (base)
+   ======================= */
+   .doctrine-title {
     display: flex;
     justify-content: center;
     width: 100%;
     color: #000;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
+    text-align: center;
+    padding: 16px;
   }
+  
   .doctrine-us {
-      display: flex;
-      flex-wrap: wrap;    
-      gap: 16px;
-      margin-top: 50px;
-      padding: 0 150px 10px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 30px;
+    padding: 0 16px 10px 16px;
   }
+  
   .doctrine {
-      flex: 1 1 calc(33.333% - 16px);
-      box-sizing: border-box;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-      text-align: justify;
-      font-family: 'Georgia', serif; 
-      background-image: url('../../../images/believe/pergamino.png'); 
-      background-size: cover; 
-      height: auto;
-      -webkit-animation: doctrine-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-      animation: doctrine-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    font-family: 'Georgia', serif;
+    background-image: url('../../../images/believe/pergamino.png');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    animation: doctrine-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   }
+  
   .doctrine h2 {
-      font-family: 'Georgia', serif;
-      color: #5a4b2e; 
-      text-align: center;
+    font-family: 'Georgia', serif;
+    color: #5a4b2e;
+    text-align: center;
+    font-size: 20px;
   }
   
   .doctrine p {
-      color: #4f3d21; 
-  }
-  @-webkit-keyframes doctrine-focus-in {
-      0% {
-        -webkit-filter: blur(12px);
-                filter: blur(12px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-filter: blur(0px);
-                filter: blur(0px);
-        opacity: 1;
-      }
-    }
-    @keyframes doctrine-focus-in {
-      0% {
-        -webkit-filter: blur(12px);
-                filter: blur(12px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-filter: blur(0px);
-                filter: blur(0px);
-        opacity: 1;
-      }
-    }
-  @media (max-width: 768px) {
-      .doctrine {
-          flex: 1 1 calc(50% - 16px); 
-      }
+    color: #4f3d21;
+    font-size: 16px;
+    line-height: 1.5;
   }
   
-  @media (max-width: 480px) {
-      .doctrine {
-          flex: 1 1 100%; 
-      }
+  /* =======================
+     ANIMACIONES
+     ======================= */
+  @keyframes doctrine-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
   }
+  
+  /* =======================
+     TABLET (>= 480px)
+     ======================= */
+  @media (min-width: 480px) {
+    .doctrine {
+      flex: 1 1 calc(50% - 16px);
+    }
+  }
+  
+  /* =======================
+     DESKTOP (>= 768px)
+     ======================= */
+  @media (min-width: 768px) {
+    .doctrine-title {
+      font-size: 28px;
+    }
+  
+    .doctrine-us {
+      padding: 0 100px 10px 100px;
+    }
+  
+    .doctrine {
+      flex: 1 1 calc(33.333% - 16px);
+    }
+  
+    .doctrine h2 {
+      font-size: 24px;
+    }
+  }
+  

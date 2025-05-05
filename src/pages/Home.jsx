@@ -1,12 +1,11 @@
 
 import { Carousel } from '../components/Carousel'
 import "../assets/css/pages/home.css";
-import { CarouselEvent } from "../components/CarouselEvent";
 import imgmissionVision from "../assets/images/main7.png";
 
 export const Home = () => {
   return (   
-    <div>
+    <div className="content">
     <Carousel/>
      <div className="content-all">     
           <div className="container-mission-vision">      
@@ -30,14 +29,15 @@ export const Home = () => {
             </div>
             <div><img src={imgmissionVision} className="mission-vision-img" /></div>
           </div>
-          <div className="join-us">
+          <div className="info-banner">
+          <div className="info-text">
             <h1>Únete a Nosotros</h1>
             <p> Te invitamos a ser parte de esta familia de fe, donde
             juntos crecemos, servimos y adoramos.</p>
             <p> <b>¡Únete a nosotros y sé testigo del
             impacto que podemos lograr en unidad!</b></p>
           </div>
-          <CarouselEvent />
+          </div> 
           <div className="container-video">
             <div className="font-video">
               <iframe

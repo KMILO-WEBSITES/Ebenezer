@@ -1,19 +1,17 @@
 // import React from 'react'
-import "../../assets/css/pages/ministries/young.css";
+import "../../assets/css/base.css";
 import youngImg from "../../assets/images/young/young1.png";
+import { SectionName } from "../../components/SectionName"
 export const Young = () => {
   return (
     <>
-      <div className="section-page-header header-page-title">
-        <div className="section-page-header-name">
-          JÓVENES
-        </div>
-      </div>
-        <div className="container-center center-fade-in-bottom">          
-            <img src={youngImg} alt="" className="center-img" />          
-            <div className="center-text">
-            <div className="center-description">
-          <p><b>
+      <SectionName sectionName={"JÓVENES"}/>
+      <div className="contenedor">
+      <div className="imagen">     
+            <img src={youngImg} alt="" className="center-info-img" />          
+            </div>
+        <div className="descripcion">
+          <p>
               Nuestro próposito es guiar a los jóvenes en su desarrollo
               espiritual, ayudándoles a construir una relación personal con
               Dios, y prepararlos para enfrentar los desafíos de la vida con una
@@ -24,8 +22,7 @@ export const Young = () => {
               auténtica, desarrollen un carácter conforme al corazón de Dios, y
               se conviertan en líderes comprometidos en la iglesia y en la
               sociedad.
-              </b></p>
-            </div>
+              </p> 
           </div>
       </div>
     </>

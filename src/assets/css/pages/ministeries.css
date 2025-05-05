@@ -1,0 +1,57 @@
+.cards-container-ministeries {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.card-ministeries {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-ministeries:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px black;
+  pointer-events: none;
+}
+
+/* Responsive para tablets y escritorio */
+@media (min-width: 600px) {
+  .cards-container-ministeries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .cards-container-ministeries {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

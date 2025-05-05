@@ -1,56 +1,45 @@
-//  import React from "react";
-import { Link } from "react-router-dom";
-import "../assets/css/components/header.css";
-// import "./header.js";
-import logo from '../assets/images/logo.png';
 
+//import React from 'react';
+import { Menubar } from 'primereact/menubar';
+import logo from '../assets/images/logo.png';
+import '../assets/css/components/header.css';
 
 export const Header = () => {
-    const myStyle = {
-        marginLeft: '90px',
-        width:'90px',
-        height:'90px'
-      };
-    return (     
-        <nav className="navbar">
-            <img src={logo} style={myStyle}/>
+    const items = [
+        {
+            label: 'Inicio',
+            command: () => window.location.href = '/'
+        },
+        {
+            label: 'Pastores',
+             command: () => window.location.href = '/shepherds'
+            
+        },
+        {
+            label: 'Historia',
+            command: () => window.location.href = '/history'
+        },
+        {
+            label: 'Que Creemos',
+            command: () => window.location.href = '/believe'
+        },
+        {
+            label: 'Ministerios',
+            command: () => window.location.href = '/ministeries'
+        },
+        {
+            label: 'Sermones',
+            command: () => window.location.href = 'https://www.youtube.com/@iglesiaebenezerorlando/streams'
+        }
+    ];
 
-            <ul className="nav-links">
-                <input type="checkbox" id="checkbox_toggle" />
-                <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
+    const start = <img alt="logo" src={logo} height="75" className="mr-2"></img>;
+    
 
-                <div className="menu">
-                    <li>
-                        <Link to="/">Inicio</Link>
-                    </li>
-                    <li className="dropdown-sub">
-                    <a href="#">Nosotros</a>                        
-
-                        <ul className="dropdown">
-                            <li><Link to="/shepherds">Pastores</Link></li>
-                            <li><Link to="/history">Historia de la Iglesia</Link></li>
-                            <li><Link to="/believe">Que Creemos</Link></li>
-                        </ul>
-                    </li>
-
-                    <li className="dropdown-sub">
-                        <a href="/">Ministerios</a>
-                        <ul className="dropdown">
-                        <li><Link to="/kids">Niños</Link></li>
-                            <li><Link to="/groups">Grupos Pequeños</Link></li>
-                            <li><Link to="/young">Jóvenes</Link></li>
-                            <li><Link to="/women">Mujeres</Link></li>
-                            <li><Link to="/men">Hombres</Link></li>
-                            <li><Link to="/rangers">Niños/Royal Rangers</Link></li>
-                            <li><Link to="/worship">Adoración</Link></li>                           
-                            <li><Link to="/dance">Danza</Link></li>                            
-                            <li><Link to="/intercession">Intercesión</Link></li>
-                        </ul>
-                    </li>
-                    <li><Link to="/events">Eventos</Link></li>
-                    <li><Link to="https://www.youtube.com/@iglesiaebenezerorlando/streams">Sermones</Link></li>
-                </div>
-            </ul>
-        </nav>
+    return (
+        <div className="card">
+            <Menubar model={items} start={start} className="custom-menubar"/>
+        </div>
     )
 }
+        

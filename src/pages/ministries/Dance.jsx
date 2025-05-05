@@ -1,32 +1,25 @@
 // import React from 'react'
-import "../../assets/css//pages/ministries/dance.css";
-import nextEvent from "../../assets/images/small-groups.jpg";
-// import Gallery from "../../components/Gallery";
+import "../../assets/css/base.css";
+import dance from "../../assets/images/dance/1.png";
+import { SectionName } from "../../components/SectionName"
 export const Dance = () => {
   return (
     <>
-      <div className="section-page-header header-page-title">
-        <div className="section-page-header-name">
-          DANZA
-        </div>
-      </div>
-      <div className="content">
-      <div className="container-center center-fade-in-bottom">
-          <img src={nextEvent} alt="" className="center-img"/>
-          <div className="center-text">
-            <div className="center-description">
-          <p><b>
+      <SectionName sectionName={"DANZA"}/>
+      <div className="contenedor">
+        <div className="imagen">
+          <img src={dance}/>
+          </div>
+        <div className="descripcion">
+          <p>
             Nuestro próposito es utilizar la danza como una forma de adoración y
             expresión espiritual, glorificando a Dios a través del movimiento y
             el arte. Tenemos como objetivo glorificar a Dios y enriquecer la
             vida de la iglesia mediante la danza, ofreciendo una forma creativa
             y poderosa de adorar, comunicar mensajes bíblicos, y conectar con la
             congregación y la comunidad en general.
-            </b></p>
-            </div>
-          </div>
+            </p>
         </div>
-        {/* <Gallery/> */}
       </div>
     </>
   );

@@ -9,24 +9,20 @@ export const Footer = () => {
       <div className='section-footer'>
         <div className='footer-text'>
           <img alt="logo" src={imagenLogo} className="logo"></img>
-        </div>
-        <div className='section-text'>
           <p>Nuestra misión es alcanzar a las almas mostrando el amor de Cristo y guiarlas a una relación íntima con Dios.</p>
         </div>
       </div>
       <div className='section-footer'>
         <div className='footer-text'>
           <b>Dirección</b>
+          <p>6220 South OBT, 410, Orlando, FL 32809, United States</p> 
         </div>
-        <div className='section-text'>          
-          <p>6220 South OBT, 410, Orlando, FL 32809, United States</p>
+      </div>
+      <div className='section-footer'>     
           <div className='footer-text'>
           <b>Servicio de Adoración</b>
-        </div>
-        <div className='section-text'>  
           <p>Domingos 11 am</p>
-          </div>
-        </div>
+        </div>       
       </div>
       <div className='section-footer'>
         <div className='footer-text'>
