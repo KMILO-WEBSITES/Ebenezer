@@ -1,31 +1,31 @@
-
-//import React from 'react';
 import { Menubar } from 'primereact/menubar';
 import logo from '../assets/images/logo.png';
 import '../assets/css/components/header.css';
+import { useNavigate } from 'react-router-dom';
 
 export const Header = () => {
+    const navigate = useNavigate();
     const items = [
         {
             label: 'Inicio',
-            command: () => window.location.href = '/'
+            command: () => navigate('/')
         },
         {
             label: 'Pastores',
-             command: () => window.location.href = '/shepherds'
+             command: () => navigate('/shepherds')
             
         },
         {
             label: 'Historia',
-            command: () => window.location.href = '/history'
+            command: () => navigate('/history')
         },
         {
             label: 'Que Creemos',
-            command: () => window.location.href = '/believe'
+            command: () => navigate('/believe')
         },
         {
             label: 'Ministerios',
-            command: () => window.location.href = '/ministeries'
+            command: () => navigate('/ministeries')
         },
         {
             label: 'Sermones',

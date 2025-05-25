@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
-import { Routes, Route } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 import "../src/assets/css/base.css";
 import "../src/assets/css/utils/variables.css";
 import "../src/assets/css/utils/mixins.css";
