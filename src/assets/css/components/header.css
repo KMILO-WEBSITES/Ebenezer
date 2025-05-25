@@ -14,6 +14,7 @@ html, body {
 }
 .card {
   width: 100%;
+  border-radius: 0;
 }
 #root{
   width: 100%;
@@ -68,6 +69,7 @@ border: none !important;
 @media screen and (max-width: 425px) {
   .card {
     width: 100%;
+    border-radius: 0;
   }
   .custom-menubar {
     display: flex;
@@ -82,5 +84,6 @@ border: none !important;
       transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
       
   }
+  
 }
 

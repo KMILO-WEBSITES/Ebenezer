@@ -37,7 +37,7 @@ export const Header = () => {
     
 
     return (
-        <div className="card" >
+        <div className="card" style={{backgroundColor: "#003366", borderRadius: "none"}}>
             <Menubar model={items} start={start} className="custom-menubar" style={{ borderRadius:"0px" }}/>
         </div>
     )
