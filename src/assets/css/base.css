@@ -1,10 +1,18 @@
+/* Variables recomendadas */
+:root {
+  --font-main: "Montserrat", sans-serif;
+  --blue-one: #003366;
+  --blue-tree: #336699;
+  --youtube-red: #FE0000;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   text-align: justify;
 }
 h2 {
@@ -67,7 +75,7 @@ h2 {
 .descripcion {
   flex: 1;
   max-width: 60%;
-  font-size: 1rem;
+  font-size: 18px;
   line-height: 1.6;
 }
 
@@ -79,8 +87,9 @@ h2 {
   }
 
   .descripcion {
-    font-size: 1rem;
+    font-size: 18px;
     text-align: justify;
+    font-family: var(--font-main);
   }
 }
 

@@ -12,7 +12,7 @@ import worship from "../assets/images/adoracion/1.png";
 import royal from "../assets/images/royal/1.png";
 export const Ministeries = () => {
   return (
-    <>
+    <div className="container-ministeries">
       <SectionName sectionName={"MINISTERIOS"}/>  
         <div className="cards-container-ministeries">
           <div className="card-ministeries" onClick={() => window.location.href = '/kids'}>
@@ -52,6 +52,6 @@ export const Ministeries = () => {
             <div className="card-title">Royal Rangers</div>
           </div>
         </div> 
-    </>
+    </div>
   );
 };
