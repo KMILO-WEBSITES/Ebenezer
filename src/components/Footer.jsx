@@ -1,4 +1,5 @@
 // import React from 'react'
+import "../assets/css/base.css";
 import "../assets/css/components/footer.css";
 import imagenLogo from '../assets/images/Ebenezer.svg';
 import { FaYoutube, FaFacebook, FaInstagram, FaWhatsapp} from "react-icons/fa";

@@ -1,5 +1,6 @@
 
 import { Carousel } from '../components/Carousel'
+import "../assets/css/base.css";
 import "../assets/css/pages/home.css";
 import imgmissionVision from "../assets/images/main7.png";
 
