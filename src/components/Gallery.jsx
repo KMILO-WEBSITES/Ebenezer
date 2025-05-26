@@ -1,16 +1,10 @@
 import "../assets/css/components/gallery.css";
 import PropTypes from 'prop-types';
-
 export const Gallery = ({ path, countImg, nameImg }) => {
-
-  Gallery.PropTypes = {
-    path: PropTypes.string.isRequired,
-    nameImg: PropTypes.string.isRequired,
-    countImg: PropTypes.number.isRequired
-  };
+ 
   const images = [];
   const imageCount = countImg;
-  const basePath = "/src/assets/images/" + path;
+  const basePath = "/images/" + path;
   for (let i = 1; i <= imageCount; i++) {
     images.push(`${basePath}${nameImg}${i}.jpg`);
   }
@@ -26,4 +20,10 @@ export const Gallery = ({ path, countImg, nameImg }) => {
       </div>
     </>
   );
+};
+
+Gallery.propTypes = {
+  path: PropTypes.string.isRequired,
+  nameImg: PropTypes.string.isRequired,
+  countImg: PropTypes.number.isRequired
 };

@@ -8,12 +8,9 @@ import "../src/assets/css/utils/mixins.css";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-
 import { Home } from './pages/Home';
-
 import { Shepherds } from './pages/us/Shepherds';
 import { History } from './pages/us/History';
 import { Believe } from './pages/us/Believe';
