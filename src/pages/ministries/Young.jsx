@@ -1,6 +1,7 @@
 // import React from 'react'
 import "../../assets/css/base.css";
 import youngImg from "../../assets/images/young/young1.png";
+import { ReturnButton } from "../../components/ReturnButton";
 import { SectionName } from "../../components/SectionName"
 export const Young = () => {
   return (
@@ -24,6 +25,7 @@ export const Young = () => {
               sociedad.
               </p> 
           </div>
+          <ReturnButton />
       </div>
     </>
   );

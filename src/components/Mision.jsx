@@ -11,18 +11,16 @@ export const Mision = () => {
           <h3>Ama a Dios, Ama a la gente.</h3>
           <h3>Misión</h3>
           <p>
-            Nuestra Iglesia existe para alcanzar a las almas mostrando el amor
-            de Cristo, y guiarlas a una relación íntima con Dios.
+          Existimos por la necesidad que experimentamos todos de pertenecer a una familia. 
+          En nuestra iglesia encontrarás a hermanos que te aceptarán y te amarán tal y como eres. 
+          Te orientarán y guiarán a tener una relación íntima con Dios. Te ayudarán a establecer y fortalecer en el Señor. 
+          Creciendo juntos en el gozo del Señor y en Su conocimiento; amándole a El y amando a la gente.
           </p>
-
+          
           <h3>Visión</h3>
           <p>
-            Existimos por la necesidad que experimentamos todos de pertenecer a
-            una familia. En nuestra iglesia encontrarás a hermanos que te
-            aceptarán y te amarán tal y como eres. Te orientarán y guiarán a
-            tener una relación íntima con Dios. Te ayudarán a establecer y
-            fortalecer en el Señor. Creciendo juntos en el gozo del Señor y en
-            Su conocimiento; amándole a El y amando a la gente.
+          Nuestra Iglesia existe para alcanzar a las almas mostrando el amor de Cristo, 
+          y guiarlas a una relación íntima con Dios.
           </p>
         </div>
 

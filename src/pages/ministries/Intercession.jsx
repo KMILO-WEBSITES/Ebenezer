@@ -1,6 +1,7 @@
 // import React from 'react'
 import "../../assets/css/base.css";
 import inter from "../../assets/images/intercesion/1.png";
+import { ReturnButton } from "../../components/ReturnButton";
 import { SectionName } from "../../components/SectionName"
 export const Intercession = () => {
   return (
@@ -17,6 +18,7 @@ export const Intercession = () => {
             nuestra comunidad, y nuestros paises.            
             </p>
           </div>
+          <ReturnButton />
       </div>
     </>
   );

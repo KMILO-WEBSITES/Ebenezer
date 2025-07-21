@@ -93,3 +93,24 @@ h2 {
   }
 }
 
+.return {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #b19db1; /* azul tipo bootstrap */
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000; /* Para que quede por encima de otros elementos */
+}
+.return:hover {
+  background-color: #0C1223;
+  transform: scale(1.05);
+  color: white;
+}

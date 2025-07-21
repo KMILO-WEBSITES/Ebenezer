@@ -1,6 +1,7 @@
 // import React from 'react'
 import "../../assets/css/base.css";
 import royal from "../../assets/images/royal/1.png";
+import { ReturnButton } from "../../components/ReturnButton";
 import { SectionName } from "../../components/SectionName"
 export const RoyalRangersKids = () => {
   return (
@@ -18,6 +19,7 @@ export const RoyalRangersKids = () => {
             leaders.            
             </p>
         </div>
+        <ReturnButton />
       </div>
     </>
   );

@@ -2,6 +2,7 @@
 import "../../assets/css/base.css";
 import dance from "../../assets/images/dance/1.png";
 import { SectionName } from "../../components/SectionName"
+import { ReturnButton } from "../../components/ReturnButton"
 export const Dance = () => {
   return (
     <>
@@ -20,7 +21,8 @@ export const Dance = () => {
             congregación y la comunidad en general.
             </p>
         </div>
-      </div>
+        <ReturnButton />
+      </div>     
     </>
   );
 };

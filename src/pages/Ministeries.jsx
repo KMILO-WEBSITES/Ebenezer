@@ -2,7 +2,6 @@ import "../assets/css/pages/ministeries.css";
 import { SectionName } from "../components/SectionName";
 import kidsImag from "../assets/images/small-church-kids.jpg";
 import youngImg from "../assets/images/young/young1.png";
-import nextEvent from "../assets/images/group/group1.jpg";
 import women from "../assets/images/women/1.png";
 import men from "../assets/images/man/1.png";
 import inter from "../assets/images/intercesion/1.png";
@@ -30,14 +29,6 @@ export const Ministeries = () => {
           </div>
           <div className="card-title-container">
             <div className="card-title">Jóvenes</div>
-          </div>
-        </div>
-        <div className="card-ministeries" onClick={() => navigate("/groups")}>
-          <div className="card-image-container">
-            <img src={nextEvent} alt="Grupos pequeños" className="card-image" />
-          </div>
-          <div className="card-title-container">
-            <div className="card-title">Grupos pequeños</div>
           </div>
         </div>
         <div className="card-ministeries" onClick={() => navigate("/women")}>

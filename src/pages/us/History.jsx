@@ -12,15 +12,9 @@ export const History = () => {
           </div>
         <div className="descripcion">
           <p>
-          Nuestro próposito es guiar a los jóvenes en su desarrollo espiritual,
-          ayudándoles a construir una relación personal con Dios, y prepararlos
-          para enfrentar los desafíos de la vida con una fe sólida. Nos
-          enfocamos en acompañar a los jóvenes durante una etapa crucial de sus
-          vidas, donde toman decisiones importantes sobre su identidad, valores,
-          y futuro. Buscamos como ministerio inspirar y equipar a los jóvenes
-          para que vivan su fe de manera auténtica, desarrollen un carácter
-          conforme al corazón de Dios, y se conviertan en líderes comprometidos
-          en la iglesia y en la sociedad.
+          La Iglesia Eben-Ezer Orlando, fue establecida  por los pastores Pedro y Elena Gomez, 
+          familia y un pequeño grupo de colaboradores el 12 de Octubre del 2011 en la ciudad de Orlando Florida y 
+          permanece en dicha ciudad hasta el día de hoy por la gracia y misericordia de nuestro Dios.
           </p>
         </div>
       </div>
