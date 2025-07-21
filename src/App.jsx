@@ -14,7 +14,6 @@ import { Home } from './pages/Home';
 import { Shepherds } from './pages/us/Shepherds';
 import { History } from './pages/us/History';
 import { Believe } from './pages/us/Believe';
-import { Groups } from './pages/ministries/Groups';
 import { Women } from './pages/ministries/Women';
 import { Men } from './pages/ministries/Men';
 import { RoyalRangersKids } from './pages/ministries/RoyalRangersKids';
@@ -35,7 +34,6 @@ function App() {
         <Route path='/history' element={<History />} />
         <Route path='/believe' element={<Believe />} />
         <Route path='/ministeries' element={<Ministeries />} />
-        <Route path='/groups' element={<Groups />} />
         <Route path='/women' element={<Women />} />
         <Route path='/men' element={<Men />} />
         <Route path='/rangers' element={<RoyalRangersKids />} />        

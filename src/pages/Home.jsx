@@ -58,12 +58,6 @@ export const Home = () => {
           </div>
           <div className="youtube-text">
             <div className="video-text">
-              <p>
-                Este vídeo ofrece una visión única de nuestra comunidad de fe,
-                destacando nuestros valores, eventos y enseñanzas clave. Únete a
-                nosotros en este viaje espiritual.
-              </p>
-              <br />
               <a
                 className="url-canal"
                 href="https://www.youtube.com/@iglesiaebenezerorlando"
@@ -79,7 +73,7 @@ export const Home = () => {
         <div className="location-us">Encuéntranos Aquí</div>
         <div className="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d270.3869545478453!2d-81.39853615693814!3d28.465847937000827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e7799884e02599%3A0x8068c1a2139088a4!2sIglesia%20De%20Cristo%20Fiel%20Y%20Verdadero%20Ebenezer!5e0!3m2!1ses!2sdo!4v1713742440668!5m2!1ses!2sdo"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.4376315631603!2d-81.40097672504939!3d28.4663642916082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77dcf1e696577%3A0xf7ab1b29eb717085!2sIglesia%20Eben-Ezer%20Orlando!5e0!3m2!1ses!2sdo!4v1753111159973!5m2!1ses!2sdo"
             className="content-map"
             loading="lazy"
           ></iframe>

@@ -1,5 +1,6 @@
 import "../../assets/css/base.css";
 import women from "../../assets/images/women/1.png";
+import { ReturnButton } from "../../components/ReturnButton";
 import { SectionName } from "../../components/SectionName"
 export const Women = () => {
   return (
@@ -17,6 +18,7 @@ export const Women = () => {
             Cristo en todas las áreas de sus vidas.
             </p> 
           </div>
+          <ReturnButton />
       </div>
     </>
   );

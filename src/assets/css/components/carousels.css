@@ -14,7 +14,7 @@
   
   .swiper-slide img {
     width: 100%; /* Ensures images fill the slide width */
-    height: auto;  /* Maintains image aspect ratio */
+    height: 700px;  /* Maintains image aspect ratio */
     object-fit: cover; /* Scales images to fit while preserving aspect ratio */
   }
   

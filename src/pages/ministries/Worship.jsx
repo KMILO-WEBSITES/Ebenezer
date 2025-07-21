@@ -1,6 +1,7 @@
 // import React from 'react'
 import "../../assets/css/base.css";
 import worship from "../../assets/images/adoracion/1.png";
+import { ReturnButton } from "../../components/ReturnButton";
 import { SectionName } from "../../components/SectionName"
 export const Worship = () => {
   return (
@@ -22,6 +23,7 @@ export const Worship = () => {
             manera profunda, auténtica, y transformadora.
             </p> 
         </div>
+        <ReturnButton />
       </div>
     </>
   );

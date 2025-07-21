@@ -1,6 +1,7 @@
 import "../../assets/css/base.css";
 import kidsImag from "../../assets/images/small-church-kids.jpg";
 import { Gallery } from "../../components/Gallery";
+import { ReturnButton } from "../../components/ReturnButton";
 import { SectionName } from "../../components/SectionName";
 export const Kids = () => {
   const path = "kids/";
@@ -26,6 +27,7 @@ export const Kids = () => {
             cristianos, todo dentro de un entorno seguro y lleno de amor.
           </p>
         </div>
+        <ReturnButton />
       </div>
       <Gallery path={path} countImg={countImg} nameImg={nameImg} />
     </>

@@ -1,6 +1,7 @@
 // import React from 'react'
 import "../../assets/css/base.css";
 import men from "../../assets/images/man/1.png";
+import { ReturnButton } from "../../components/ReturnButton";
 import { SectionName } from "../../components/SectionName";
 export const Men = () => {
   return (
@@ -20,6 +21,7 @@ export const Men = () => {
             familiar, profesional y comunitaria.            
             </p>
           </div>
+          <ReturnButton />
       </div>
     </>
   );
