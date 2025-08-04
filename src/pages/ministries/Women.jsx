@@ -1,5 +1,5 @@
 import "../../assets/css/base.css";
-import women from "../../assets/images/women/1.png";
+import women from "../../assets/images/women/women-info.jpg";
 import { ReturnButton } from "../../components/ReturnButton";
 import { SectionName } from "../../components/SectionName"
 export const Women = () => {

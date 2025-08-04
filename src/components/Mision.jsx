@@ -1,6 +1,6 @@
-import mision1 from "../assets/images/mision1.jpg";
-import mision2 from "../assets/images/mision2.jpg";
-import mision3 from "../assets/images/mision3.jpg";
+import mision1 from "../assets/images/mision/mision1.jpg";
+import mision2 from "../assets/images/mision/mision2.jpg";
+import mision3 from "../assets/images/mision/mision3.jpg";
 import "../assets/css/components/mision.css";
 
 export const Mision = () => {

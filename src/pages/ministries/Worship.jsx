@@ -1,6 +1,6 @@
 // import React from 'react'
 import "../../assets/css/base.css";
-import worship from "../../assets/images/adoracion/1.png";
+import worship from "../../assets/images/adoracion/adoracion-info.jpg";
 import { ReturnButton } from "../../components/ReturnButton";
 import { SectionName } from "../../components/SectionName"
 export const Worship = () => {

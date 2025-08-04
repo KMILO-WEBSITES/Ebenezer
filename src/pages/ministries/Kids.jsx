@@ -1,5 +1,5 @@
 import "../../assets/css/base.css";
-import kidsImag from "../../assets/images/small-church-kids.jpg";
+import kidsImag from "../../assets/images/kids/kids1.jpg";
 import { Gallery } from "../../components/Gallery";
 import { ReturnButton } from "../../components/ReturnButton";
 import { SectionName } from "../../components/SectionName";
