@@ -1,0 +1,48 @@
+.contenedor-shepherds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  margin: 50px 20px;
+  gap: 20px;
+  box-shadow: rgba(206, 109, 228, 0.5) -4px 9px 25px -6px;
+}
+
+.imagen-shepherds, .descripcion-shepherds {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.imagen-shepherds {
+  flex: 0 0 40%;
+}
+
+.imagen-shepherds img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  display: block;
+  border-radius: 25px;
+}
+
+.descripcion-shepherds {
+  flex: 1;
+  max-width: 60%;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Responsive: para móviles */
+@media (max-width: 768px) {
+  .imagen-shepherds, .descripcion-shepherds {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .descripcion-shepherds {
+    font-size: 18px;
+    text-align: justify;
+    font-family: var(--font-main);
+  }
+}

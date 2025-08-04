@@ -1,12 +1,12 @@
 import "../assets/css/pages/ministeries.css";
 import { SectionName } from "../components/SectionName";
-import kidsImag from "../assets/images/small-church-kids.jpg";
-import youngImg from "../assets/images/young/young1.png";
-import women from "../assets/images/women/1.png";
+import kidsImag from "../assets/images/kids/kids1.jpg";
+import youngImg from "../assets/images/young/jovenes-info.jpg";
+import women from "../assets/images/women/women-info.jpg";
 import men from "../assets/images/man/1.png";
 import inter from "../assets/images/intercesion/1.png";
 import dance from "../assets/images/dance/1.png";
-import worship from "../assets/images/adoracion/1.png";
+import worship from "../assets/images/adoracion/adoracion-info.jpg";
 import royal from "../assets/images/royal/1.png";
 import { useNavigate } from "react-router-dom";
 export const Ministeries = () => {
